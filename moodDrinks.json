@@ -1,749 +1,3337 @@
-export interface Brand {
-    name: string
-    description: string
+{
+  "happy": {
+    "icon": "emoticon-happy-outline",
+    "drinks": [
+      {
+        "name": "Mojito",
+        "description": "A refreshing mix of rum, mint, and lime",
+        "longDescription": "The Mojito is a traditional Cuban highball. The cocktail often consists of five ingredients: white rum, sugar, lime juice, soda water, and mint.",
+        "image": "https://images.unsplash.com/photo-1509448613959-44d527dd5d86?q=80&w=2870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Havana Club",
+            "description": "Authentic Cuban rum"
+          },
+          {
+            "name": "Bacardi",
+            "description": "Popular white rum brand"
+          },
+          {
+            "name": "Captain Morgan",
+            "description": "Well-known rum brand"
+          }
+        ],
+        "recipe": [
+          "2 oz white rum",
+          "1 oz fresh lime juice",
+          "1 oz simple syrup",
+          "8-10 fresh mint leaves",
+          "Soda water"
+        ],
+        "instructions": [
+          "Muddle mint leaves with simple syrup in a glass",
+          "Add rum, lime juice, and ice",
+          "Stir well",
+          "Top with soda water",
+          "Garnish with mint sprig and lime wheel"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Margarita",
+        "description": "A zesty blend of tequila, lime, and salt",
+        "longDescription": "The Margarita is a Mexican-inspired cocktail made with tequila, lime, and triple sec. It's often served with salt on the rim of the glass.",
+        "image": "https://images.unsplash.com/photo-1678862656501-9bd5d0bf6de1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Patrón",
+            "description": "Premium tequila brand"
+          },
+          {
+            "name": "Don Julio",
+            "description": "High-quality tequila"
+          },
+          {
+            "name": "Jose Cuervo",
+            "description": "Well-known tequila brand"
+          }
+        ],
+        "recipe": [
+          "2 oz tequila",
+          "1 oz lime juice",
+          "1 oz triple sec",
+          "Salt for rimming"
+        ],
+        "instructions": [
+          "Rim glass with salt",
+          "Combine tequila, lime juice, and triple sec in a shaker with ice",
+          "Shake well",
+          "Strain into the prepared glass",
+          "Garnish with a lime wheel"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Pina Colada",
+        "description": "A tropical fusion of rum, coconut, and pineapple",
+        "longDescription": "The Piña Colada is a sweet cocktail made with rum, coconut cream, and pineapple juice. It's often served blended or shaken with ice.",
+        "image": "https://images.unsplash.com/photo-1490324120634-0fa86c62d6c1?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3",
+        "brands": [
+          {
+            "name": "Malibu",
+            "description": "Coconut flavored rum"
+          },
+          {
+            "name": "Bacardi",
+            "description": "Popular white rum brand"
+          },
+          {
+            "name": "Captain Morgan",
+            "description": "Well-known rum brand"
+          }
+        ],
+        "recipe": [
+          "2 oz white rum",
+          "2 oz coconut cream",
+          "2 oz pineapple juice",
+          "1 cup crushed ice"
+        ],
+        "instructions": [
+          "Combine all ingredients in a blender",
+          "Blend until smooth",
+          "Pour into a tall glass",
+          "Garnish with a pineapple wedge and cherry"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Strawberry Daiquiri",
+        "description": "A fruity frozen rum cocktail",
+        "longDescription": "The Strawberry Daiquiri is a delicious blend of strawberries, rum, and lime. It's often served frozen and perfect for parties and summer fun.",
+        "image": "https://images.unsplash.com/photo-1612197526201-f5de72b3b99e?q=80&w=2870&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Bacardi",
+            "description": "Classic rum for fruity cocktails"
+          },
+          {
+            "name": "Mount Gay",
+            "description": "Bold and rich rum flavor"
+          }
+        ],
+        "recipe": [
+          "2 oz white rum",
+          "1 oz lime juice",
+          "1 oz simple syrup",
+          "1 cup fresh strawberries",
+          "1 cup ice"
+        ],
+        "instructions": [
+          "Blend all ingredients until smooth",
+          "Pour into a hurricane or cocktail glass",
+          "Garnish with a strawberry or lime wheel"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Aperol Spritz",
+        "description": "A sparkling Italian classic with orange notes",
+        "longDescription": "The Aperol Spritz is a vibrant, slightly bitter cocktail that's become a happy-hour staple across Europe. Made with Aperol, Prosecco, and soda water.",
+        "image": "https://images.unsplash.com/photo-1590080874851-cbb5fe1463ab?q=80&w=2870&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Aperol",
+            "description": "Italian bitter aperitif"
+          },
+          {
+            "name": "La Marca",
+            "description": "Popular Prosecco brand"
+          },
+          {
+            "name": "Campari",
+            "description": "Alternative bitter aperitif"
+          }
+        ],
+        "recipe": [
+          "3 oz Prosecco",
+          "2 oz Aperol",
+          "1 oz soda water"
+        ],
+        "instructions": [
+          "Add ice to a wine glass",
+          "Pour in Aperol and Prosecco",
+          "Top with soda water",
+          "Garnish with an orange slice"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Mimosa",
+        "description": "Champagne and orange juice combo",
+        "longDescription": "A Mimosa is a brunch favorite that combines sparkling wine and fresh orange juice. It’s bubbly, citrusy, and delightfully light.",
+        "image": "https://images.unsplash.com/photo-1612459806789-302d2fcf7284?q=80&w=2870&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Moët & Chandon",
+            "description": "Premium Champagne"
+          },
+          {
+            "name": "Freixenet",
+            "description": "Affordable sparkling wine"
+          }
+        ],
+        "recipe": [
+          "2 oz chilled Champagne or sparkling wine",
+          "2 oz fresh orange juice"
+        ],
+        "instructions": [
+          "Pour orange juice into a flute glass",
+          "Top with sparkling wine",
+          "Do not stir",
+          "Garnish with an orange twist (optional)"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Tequila Sunrise",
+        "description": "A vibrant tequila drink with orange and grenadine",
+        "longDescription": "The Tequila Sunrise is known for its beautiful gradient of colors, resembling a sunrise. It's made with tequila, orange juice, and grenadine.",
+        "image": "https://images.unsplash.com/photo-1565895405138-3b7b476b93c7?q=80&w=2870&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Jose Cuervo",
+            "description": "Well-known tequila brand"
+          },
+          {
+            "name": "Patrón",
+            "description": "Premium smooth tequila"
+          }
+        ],
+        "recipe": [
+          "2 oz tequila",
+          "4 oz orange juice",
+          "1/2 oz grenadine"
+        ],
+        "instructions": [
+          "Fill glass with ice",
+          "Pour tequila and orange juice",
+          "Slowly add grenadine to settle at the bottom",
+          "Do not stir",
+          "Garnish with orange slice and cherry"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Mai Tai",
+        "description": "A tiki-style tropical rum cocktail",
+        "longDescription": "The Mai Tai is a classic tiki cocktail featuring rum, lime, and orgeat. It’s fruity, zesty, and strong—perfect for a happy beach vibe.",
+        "image": "https://images.unsplash.com/photo-1589923188900-cd939d70cd67?q=80&w=2870&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Appleton Estate",
+            "description": "Jamaican rum with character"
+          },
+          {
+            "name": "Myers's Rum",
+            "description": "Dark, rich rum"
+          }
+        ],
+        "recipe": [
+          "1 oz white rum",
+          "1 oz dark rum",
+          "1/2 oz orange curaçao",
+          "1/2 oz orgeat syrup",
+          "1 oz lime juice"
+        ],
+        "instructions": [
+          "Shake all ingredients except dark rum with ice",
+          "Strain into a glass with crushed ice",
+          "Float dark rum on top",
+          "Garnish with mint and lime"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Sex on the Beach",
+        "description": "Fruity, peachy, and beachy cocktail",
+        "longDescription": "Sex on the Beach is a fun, fruity cocktail made with vodka, peach schnapps, orange, and cranberry juice—perfect for summer celebrations.",
+        "image": "https://images.unsplash.com/photo-1597045566677-06a6a8b7d55d?q=80&w=2870&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Absolut",
+            "description": "Clean-tasting Swedish vodka"
+          },
+          {
+            "name": "DeKuyper",
+            "description": "Popular peach schnapps brand"
+          }
+        ],
+        "recipe": [
+          "1 1/2 oz vodka",
+          "1/2 oz peach schnapps",
+          "2 oz orange juice",
+          "2 oz cranberry juice"
+        ],
+        "instructions": [
+          "Fill a shaker with all ingredients and ice",
+          "Shake and strain into a highball glass over ice",
+          "Garnish with orange slice or cherry"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Blue Lagoon",
+        "description": "Electric blue vodka-based cocktail",
+        "longDescription": "The Blue Lagoon is a bright and fun cocktail made with vodka, blue curaçao, and lemonade. It’s zesty, sweet, and visually stunning.",
+        "image": "https://images.unsplash.com/photo-1622560482748-d1a1c1e7d538?q=80&w=2870&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Skyy",
+            "description": "Smooth American vodka"
+          },
+          {
+            "name": "Bols",
+            "description": "Classic blue curaçao"
+          }
+        ],
+        "recipe": [
+          "1 oz vodka",
+          "1 oz blue curaçao",
+          "4 oz lemonade"
+        ],
+        "instructions": [
+          "Add vodka and curaçao to a glass of ice",
+          "Top with lemonade",
+          "Stir gently",
+          "Garnish with a lemon wheel or cherry"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Caipirinha",
+        "description": "Brazil’s national cocktail with lime and cachaça",
+        "longDescription": "The Caipirinha is a sweet-tart cocktail made with lime, sugar, and cachaça, a Brazilian spirit made from sugarcane. Refreshing and bold.",
+        "image": "https://images.unsplash.com/photo-1657299174102-c8a8a16a0aa7?q=80&w=2870&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Leblon",
+            "description": "Popular premium cachaça"
+          },
+          {
+            "name": "Ypióca",
+            "description": "Traditional Brazilian cachaça"
+          }
+        ],
+        "recipe": [
+          "2 oz cachaça",
+          "1 lime (cut into wedges)",
+          "2 tsp sugar"
+        ],
+        "instructions": [
+          "Muddle lime and sugar in a glass",
+          "Add cachaça and ice",
+          "Stir well"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Paloma",
+        "description": "A zesty mix of tequila and grapefruit soda",
+        "longDescription": "The Paloma is a beloved Mexican cocktail made with tequila and grapefruit soda. It’s fizzy, tangy, and ultra-refreshing for a happy mood.",
+        "image": "https://images.unsplash.com/photo-1604908812878-97d79fcd13b2?q=80&w=2870&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Espolòn",
+            "description": "Smooth tequila with citrus notes"
+          },
+          {
+            "name": "Jarritos",
+            "description": "Classic Mexican grapefruit soda"
+          }
+        ],
+        "recipe": [
+          "2 oz tequila",
+          "1/2 oz lime juice",
+          "4 oz grapefruit soda",
+          "Pinch of salt"
+        ],
+        "instructions": [
+          "Rim glass with salt (optional)",
+          "Fill glass with ice",
+          "Add tequila and lime juice",
+          "Top with grapefruit soda",
+          "Stir and garnish with grapefruit slice"
+        ],
+        "alcoholic": true
+      }
+    ]
+  },
+  "relaxed": {
+    "icon": "weather-night",
+    "drinks": [
+      {
+        "name": "Red Wine",
+        "description": "A smooth, full-bodied red to unwind",
+        "longDescription": "Red wine is made from dark-colored grape varieties. It's rich in antioxidants and can have complex flavors depending on the grape and aging process.",
+        "image": "https://images.unsplash.com/photo-1601924381523-019b78541b95?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Cabernet Sauvignon",
+            "description": "Full-bodied red wine"
+          },
+          {
+            "name": "Merlot",
+            "description": "Smooth, medium-bodied red wine"
+          },
+          {
+            "name": "Pinot Noir",
+            "description": "Light to medium-bodied red wine"
+          }
+        ],
+        "recipe": [
+          "Pour 5 oz of red wine into a wine glass"
+        ],
+        "instructions": [
+          "Choose your preferred red wine",
+          "Open the bottle and let it breathe for a few minutes",
+          "Pour into a wine glass",
+          "Swirl gently and enjoy"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Whiskey Neat",
+        "description": "Pure, unadulterated whiskey for sipping",
+        "longDescription": "Whiskey neat refers to a straight pour of whiskey into a glass, served at room temperature without ice, water, or any mixer.",
+        "image": "https://images.unsplash.com/photo-1605806629664-1a050df0a913?q=80&w=2918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Johnnie Walker Black Label",
+            "description": "Blended Scotch whisky"
+          },
+          {
+            "name": "Glenfiddich 12 Year",
+            "description": "Single malt Scotch whisky"
+          },
+          {
+            "name": "Macallan 12 Year",
+            "description": "Highland single malt Scotch whisky"
+          }
+        ],
+        "recipe": [
+          "Pour 2 oz of whiskey into a whiskey glass"
+        ],
+        "instructions": [
+          "Choose your preferred whiskey",
+          "Pour into a whiskey glass",
+          "Let it sit for a moment to open up",
+          "Sip and savor slowly"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Chamomile Tea",
+        "description": "A soothing herbal infusion for ultimate relaxation",
+        "longDescription": "Chamomile tea is an herbal tea made from dried chamomile flowers. It's known for its calming properties and is often consumed before bedtime.",
+        "image": "https://images.unsplash.com/photo-1652620386215-d7aaf6edf856?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Twinings",
+            "description": "Well-known tea brand"
+          },
+          {
+            "name": "Celestial Seasonings",
+            "description": "Popular herbal tea brand"
+          },
+          {
+            "name": "Harney & Sons",
+            "description": "Premium tea brand"
+          }
+        ],
+        "recipe": [
+          "1 chamomile tea bag",
+          "1 cup hot water",
+          "Optional: honey or lemon to taste"
+        ],
+        "instructions": [
+          "Boil water",
+          "Place tea bag in a mug",
+          "Pour hot water over the tea bag",
+          "Steep for 3-5 minutes",
+          "Remove tea bag and add honey or lemon if desired"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Hot Toddy",
+        "description": "A warm whiskey drink to melt stress",
+        "longDescription": "The Hot Toddy is a comforting cocktail made with whiskey, honey, lemon, and hot water. It’s a classic choice for cold nights or when you need something soothing.",
+        "image": "https://images.unsplash.com/photo-1603052875420-4571e744a58a?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Jameson",
+            "description": "Smooth Irish whiskey"
+          },
+          {
+            "name": "Bulleit",
+            "description": "Spicy bourbon"
+          }
+        ],
+        "recipe": [
+          "2 oz whiskey",
+          "1 tbsp honey",
+          "1/2 oz lemon juice",
+          "1 cup hot water"
+        ],
+        "instructions": [
+          "Combine whiskey, honey, and lemon juice in a mug",
+          "Add hot water and stir until honey dissolves",
+          "Garnish with cinnamon stick or lemon slice",
+          "Sip slowly and relax"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Earl Grey Tea",
+        "description": "A calming black tea with bergamot aroma",
+        "longDescription": "Earl Grey is a classic black tea flavored with oil from the rind of bergamot orange. It offers a smooth, citrusy taste ideal for a relaxing break.",
+        "image": "https://images.unsplash.com/photo-1608571424565-d779b8d5d6c4?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Twinings",
+            "description": "Classic Earl Grey flavor"
+          },
+          {
+            "name": "Tazo",
+            "description": "Fragrant and rich tea blends"
+          },
+          {
+            "name": "Numi",
+            "description": "Organic and premium teas"
+          }
+        ],
+        "recipe": [
+          "1 Earl Grey tea bag",
+          "1 cup hot water",
+          "Optional: milk or lemon"
+        ],
+        "instructions": [
+          "Boil water and pour into a mug",
+          "Add tea bag and steep for 3-4 minutes",
+          "Add lemon or milk if preferred",
+          "Enjoy slowly with a book or soft music"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Baileys on the Rocks",
+        "description": "Creamy Irish liqueur over ice",
+        "longDescription": "Baileys Irish Cream is a sweet and smooth liqueur made from Irish whiskey and cream. Served over ice, it’s perfect for unwinding after a long day.",
+        "image": "https://images.unsplash.com/photo-1593698055357-845e4f836afe?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Baileys",
+            "description": "Original Irish Cream"
+          },
+          {
+            "name": "Carolans",
+            "description": "Honey-sweetened cream liqueur"
+          }
+        ],
+        "recipe": [
+          "2 oz Baileys Irish Cream",
+          "Ice cubes"
+        ],
+        "instructions": [
+          "Fill a glass with ice",
+          "Pour Baileys over ice",
+          "Stir gently if desired",
+          "Sip slowly and enjoy the creaminess"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Golden Milk",
+        "description": "Turmeric latte for cozy evenings",
+        "longDescription": "Golden Milk is a warm, non-alcoholic drink made with milk, turmeric, and spices. It’s known for its anti-inflammatory properties and calming effect.",
+        "image": "https://images.unsplash.com/photo-1619158401204-489f0b2097ed?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Gaia Herbs",
+            "description": "Turmeric blends for golden milk"
+          },
+          {
+            "name": "Navitas Organics",
+            "description": "Superfood-based mixes"
+          }
+        ],
+        "recipe": [
+          "1 cup milk or plant-based milk",
+          "1/2 tsp turmeric",
+          "1/4 tsp cinnamon",
+          "Pinch of black pepper",
+          "1 tsp honey (optional)"
+        ],
+        "instructions": [
+          "Warm milk in a saucepan",
+          "Whisk in turmeric, cinnamon, and black pepper",
+          "Simmer for 3-5 minutes",
+          "Sweeten with honey if desired",
+          "Pour into a mug and enjoy warm"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Negroni",
+        "description": "A bitter-smooth Italian classic",
+        "longDescription": "The Negroni is a sophisticated cocktail made with gin, Campari, and sweet vermouth. It’s slightly bitter, aromatic, and perfect for winding down.",
+        "image": "https://images.unsplash.com/photo-1606788075761-0a132b6a1e1e?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Tanqueray",
+            "description": "Classic London dry gin"
+          },
+          {
+            "name": "Campari",
+            "description": "Italian bitter liqueur"
+          },
+          {
+            "name": "Martini Rosso",
+            "description": "Sweet red vermouth"
+          }
+        ],
+        "recipe": [
+          "1 oz gin",
+          "1 oz Campari",
+          "1 oz sweet vermouth"
+        ],
+        "instructions": [
+          "Stir all ingredients with ice in a mixing glass",
+          "Strain into a rocks glass with fresh ice",
+          "Garnish with orange peel"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Peppermint Tea",
+        "description": "A cool, calming herbal brew",
+        "longDescription": "Peppermint tea is a naturally caffeine-free infusion known for its refreshing taste and ability to ease tension and support digestion.",
+        "image": "https://images.unsplash.com/photo-1642771615056-e0bb36e7d9fc?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Bigelow",
+            "description": "Classic peppermint tea"
+          },
+          {
+            "name": "Pukka",
+            "description": "Organic herbal blends"
+          }
+        ],
+        "recipe": [
+          "1 peppermint tea bag",
+          "1 cup boiling water"
+        ],
+        "instructions": [
+          "Boil water and pour over tea bag in a cup",
+          "Steep for 5-7 minutes",
+          "Drink slowly to relax your body and mind"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Port Wine",
+        "description": "A sweet, rich after-dinner wine",
+        "longDescription": "Port wine is a Portuguese fortified wine with sweet, rich flavors. It’s often sipped slowly as a dessert wine or paired with cheese.",
+        "image": "https://images.unsplash.com/photo-1626166813382-d9c3292c8d84?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Taylor Fladgate",
+            "description": "Classic vintage Port"
+          },
+          {
+            "name": "Sandeman",
+            "description": "Well-known Port producer"
+          }
+        ],
+        "recipe": [
+          "Pour 3 oz of Port into a small wine glass"
+        ],
+        "instructions": [
+          "Choose a good-quality Port",
+          "Pour into a small wine or sherry glass",
+          "Enjoy slowly, ideally at room temperature"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Warm Apple Cider",
+        "description": "A spiced, cozy non-alcoholic treat",
+        "longDescription": "Warm apple cider is a comforting drink made by heating apple juice with spices like cinnamon and cloves. It’s ideal for cold evenings and quiet moments.",
+        "image": "https://images.unsplash.com/photo-1602334709470-ef5c0425f933?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Martinelli’s",
+            "description": "Premium apple juice & cider"
+          },
+          {
+            "name": "Tree Top",
+            "description": "Classic apple beverage brand"
+          }
+        ],
+        "recipe": [
+          "1 cup apple cider",
+          "Cinnamon stick",
+          "2 cloves",
+          "Orange peel (optional)"
+        ],
+        "instructions": [
+          "Combine cider and spices in a saucepan",
+          "Simmer for 10 minutes (do not boil)",
+          "Strain and pour into a mug",
+          "Garnish with orange peel if desired"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Brandy Snifter",
+        "description": "A warm, aromatic spirit served in a snifter glass",
+        "longDescription": "Brandy is a distilled spirit made from wine or fermented fruit juice. When served in a snifter and warmed by hand, it’s a slow-sipping drink perfect for relaxing.",
+        "image": "https://images.unsplash.com/photo-1630093058992-14421e45377f?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Rémy Martin",
+            "description": "Premium French Cognac"
+          },
+          {
+            "name": "Hennessy",
+            "description": "World-renowned Cognac"
+          }
+        ],
+        "recipe": [
+          "2 oz brandy or cognac"
+        ],
+        "instructions": [
+          "Pour brandy into a snifter glass",
+          "Let it warm in your hand for a few minutes",
+          "Swirl gently and enjoy the aroma"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Lavender Lemonade",
+        "description": "A floral twist on a calming classic",
+        "longDescription": "Lavender lemonade is a refreshing and soothing drink that blends the tartness of lemon with the calming scent of lavender. Perfect for relaxing afternoons.",
+        "image": "https://images.unsplash.com/photo-1612746112636-5f62b57ee275?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Belvoir Farm",
+            "description": "Botanical lemonades and cordials"
+          },
+          {
+            "name": "Califia Farms",
+            "description": "Plant-based beverage brand"
+          }
+        ],
+        "recipe": [
+          "1/2 cup fresh lemon juice",
+          "3 cups cold water",
+          "1/4 cup lavender syrup or steeped lavender tea",
+          "Honey or sugar to taste"
+        ],
+        "instructions": [
+          "Mix lemon juice, lavender, and water in a pitcher",
+          "Sweeten to taste",
+          "Serve over ice with a lemon slice"
+        ],
+        "alcoholic": false
+      }
+    ]
+  },
+  "energetic": {
+    "icon": "lightning-bolt",
+    "drinks": [
+      {
+        "name": "Espresso Martini",
+        "description": "A caffeinated cocktail to spark your night",
+        "longDescription": "The Espresso Martini is a cold, coffee-flavored cocktail made with vodka, espresso coffee, coffee liqueur, and sugar syrup. It's rich, indulgent, and the perfect pick-me-up for a night out.",
+        "image": "https://images.unsplash.com/photo-1607805043580-a37c1540c5dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Kahlúa",
+            "description": "A coffee liqueur that adds richness and depth"
+          },
+          {
+            "name": "Absolut Vodka",
+            "description": "A smooth vodka that blends well with coffee flavors"
+          },
+          {
+            "name": "Mr Black Coffee Liqueur",
+            "description": "An Australian coffee liqueur with a strong coffee kick"
+          },
+          {
+            "name": "Tia Maria",
+            "description": "Another popular coffee liqueur option"
+          },
+          {
+            "name": "Grey Goose Vodka",
+            "description": "A premium vodka for a luxurious Espresso Martini"
+          }
+        ],
+        "recipe": [
+          "2 oz vodka",
+          "1 oz fresh espresso",
+          "3/4 oz coffee liqueur",
+          "1/4 oz simple syrup (optional)",
+          "Coffee beans for garnish"
+        ],
+        "instructions": [
+          "Fill a shaker with ice",
+          "Add vodka, fresh espresso, coffee liqueur, and simple syrup",
+          "Shake vigorously for about 20 seconds",
+          "Strain into a chilled martini glass",
+          "Garnish with three coffee beans"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Red Bull Vodka",
+        "description": "A high-octane mix of energy drink and vodka",
+        "longDescription": "Red Bull Vodka is a popular cocktail that combines the stimulating effects of an energy drink with the relaxing properties of vodka. It's known for providing a burst of energy.",
+        "image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Red Bull",
+            "description": "Popular energy drink"
+          },
+          {
+            "name": "Grey Goose",
+            "description": "Premium vodka brand"
+          },
+          {
+            "name": "Smirnoff",
+            "description": "Well-known vodka brand"
+          }
+        ],
+        "recipe": [
+          "2 oz vodka",
+          "1 can Red Bull energy drink"
+        ],
+        "instructions": [
+          "Fill a highball glass with ice",
+          "Pour in vodka",
+          "Top with Red Bull",
+          "Stir gently to combine",
+          "Garnish with a lemon wedge if desired"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Long Island Iced Tea",
+        "description": "A potent blend of multiple spirits",
+        "longDescription": "The Long Island Iced Tea is a type of alcoholic mixed drink typically made with vodka, tequila, light rum, triple sec, gin, and a splash of cola. Despite its name, the drink contains no tea.",
+        "image": "https://images.unsplash.com/photo-1495221521568-8b714b2cb6fd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Absolut Vodka",
+            "description": "Swedish vodka brand"
+          },
+          {
+            "name": "Bacardi Rum",
+            "description": "Popular white rum"
+          },
+          {
+            "name": "Jose Cuervo Tequila",
+            "description": "Well-known tequila brand"
+          }
+        ],
+        "recipe": [
+          "1/2 oz vodka",
+          "1/2 oz white rum",
+          "1/2 oz gin",
+          "1/2 oz tequila",
+          "1/2 oz triple sec",
+          "1 oz fresh lemon juice",
+          "1 oz simple syrup",
+          "Cola to top"
+        ],
+        "instructions": [
+          "Fill a cocktail shaker with ice",
+          "Add all ingredients except cola",
+          "Shake well for about 10 seconds",
+          "Strain into a highball glass filled with ice",
+          "Top with a splash of cola",
+          "Garnish with a lemon wedge"
+        ],
+        "alcoholic": true
+      }
+    ]
+  },
+  "sad": {
+    "icon": "emoticon-sad-outline",
+    "drinks": [
+      {
+        "name": "Hot Chocolate",
+        "description": "A warm, comforting cocoa hug",
+        "longDescription": "Hot chocolate is a warm beverage made from shaved chocolate, melted chocolate or cocoa powder, heated milk or water, and sugar. It's often topped with whipped cream or marshmallows.",
+        "image": "https://images.unsplash.com/photo-1517578239113-b03992dcdd25?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Ghirardelli",
+            "description": "Premium chocolate brand"
+          },
+          {
+            "name": "Godiva",
+            "description": "Luxury Belgian chocolate"
+          },
+          {
+            "name": "Swiss Miss",
+            "description": "Popular instant hot chocolate mix"
+          }
+        ],
+        "recipe": [
+          "2 tbsp unsweetened cocoa powder",
+          "1-2 tbsp sugar (to taste)",
+          "Pinch of salt",
+          "1 cup milk",
+          "1/4 tsp vanilla extract (optional)",
+          "Whipped cream or marshmallows (optional)"
+        ],
+        "instructions": [
+          "In a saucepan, whisk together cocoa powder, sugar, and salt",
+          "Gradually add milk while whisking to combine",
+          "Heat over medium heat, stirring frequently, until hot",
+          "Remove from heat and stir in vanilla extract if using",
+          "Pour into a mug and top with whipped cream or marshmallows if desired"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Warm Milk with Honey",
+        "description": "A soothing, sweet classic",
+        "longDescription": "Warm milk with honey is a simple, comforting drink often used as a natural sleep aid. The combination of warm milk and honey is believed to have calming properties.",
+        "image": "https://images.unsplash.com/photo-1601740982032-f7f00107676c?q=80&w=2760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Local organic milk",
+            "description": "Fresh, high-quality milk"
+          },
+          {
+            "name": "Manuka honey",
+            "description": "Premium honey with potential health benefits"
+          },
+          {
+            "name": "Wildflower honey",
+            "description": "Flavorful honey from various flower sources"
+          }
+        ],
+        "recipe": [
+          "1 cup milk",
+          "1-2 tsp honey",
+          "Optional: pinch of cinnamon or nutmeg"
+        ],
+        "instructions": [
+          "Heat milk in a small saucepan over medium heat until warm",
+          "Remove from heat and stir in honey until dissolved",
+          "Pour into a mug",
+          "Sprinkle with cinnamon or nutmeg if desired",
+          "Enjoy while warm"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Herbal Tea",
+        "description": "A calming blend of herbs to lift your spirits",
+        "longDescription": "Herbal tea is a caffeine-free infusion made from various herbs, flowers, and spices. Different blends can offer various benefits, from relaxation to mood enhancement.",
+        "image": "https://images.unsplash.com/photo-1630543378528-10043e324452?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Yogi Tea",
+            "description": "Ayurvedic-inspired herbal tea blends"
+          },
+          {
+            "name": "Traditional Medicinals",
+            "description": "Wellness-focused herbal teas"
+          },
+          {
+            "name": "Pukka",
+            "description": "Organic herbal teas with unique blends"
+          }
+        ],
+        "recipe": [
+          "1 herbal tea bag or 1 tsp loose herbal tea",
+          "1 cup hot water",
+          "Optional: honey or lemon to taste"
+        ],
+        "instructions": [
+          "Boil water and let it cool for a minute",
+          "Place tea bag or loose tea in a mug",
+          "Pour hot water over the tea",
+          "Steep for 5-7 minutes, or according to package instructions",
+          "Remove tea bag or strain loose tea",
+          "Add honey or lemon if desired"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Golden Turmeric Latte",
+        "description": "A warm, spiced drink for comfort and healing",
+        "longDescription": "Golden milk (or turmeric latte) is known for its anti-inflammatory properties and comforting warmth. It's a soothing choice when you're feeling low or under the weather.",
+        "image": "https://images.unsplash.com/photo-1617727553252-5456c82b9cb6?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Gaia Herbs",
+            "description": "Turmeric blends and wellness teas"
+          },
+          {
+            "name": "Turmeric Teas",
+            "description": "Spiced herbal blends"
+          }
+        ],
+        "recipe": [
+          "1 cup milk (dairy or non-dairy)",
+          "1/2 tsp ground turmeric",
+          "1/4 tsp cinnamon",
+          "Pinch of black pepper",
+          "1 tsp honey or maple syrup"
+        ],
+        "instructions": [
+          "Heat milk in a saucepan over medium heat",
+          "Whisk in turmeric, cinnamon, and pepper",
+          "Simmer for 5 minutes",
+          "Remove from heat, add sweetener, and stir",
+          "Serve in a cozy mug"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Mulled Apple Cider",
+        "description": "A warm hug in a mug",
+        "longDescription": "Mulled apple cider is heated apple juice spiced with cinnamon, cloves, and citrus. It evokes cozy fall feelings and is perfect for curling up on quiet days.",
+        "image": "https://images.unsplash.com/photo-1632959832441-b5d5cf21b046?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Martinelli’s",
+            "description": "Classic apple cider"
+          },
+          {
+            "name": "Tree Top",
+            "description": "Fresh apple beverages"
+          }
+        ],
+        "recipe": [
+          "2 cups apple cider",
+          "1 cinnamon stick",
+          "2-3 whole cloves",
+          "2 slices of orange"
+        ],
+        "instructions": [
+          "Combine all ingredients in a pot",
+          "Simmer gently for 10–15 minutes",
+          "Strain and pour into a mug",
+          "Serve with an orange slice or cinnamon stick"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Spiced Hot Toddy",
+        "description": "A comforting whiskey cocktail for dreary days",
+        "longDescription": "A hot toddy blends whiskey, honey, lemon, and hot water for a calming effect. It’s great for cold evenings or when you need warmth and a little lift.",
+        "image": "https://images.unsplash.com/photo-1603052875420-4571e744a58a?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Jameson",
+            "description": "Smooth Irish whiskey"
+          },
+          {
+            "name": "Maker’s Mark",
+            "description": "Soft bourbon"
+          }
+        ],
+        "recipe": [
+          "2 oz whiskey",
+          "1 tbsp honey",
+          "1/2 oz lemon juice",
+          "1 cup hot water"
+        ],
+        "instructions": [
+          "Combine whiskey, honey, and lemon juice in a mug",
+          "Top with hot water and stir until honey dissolves",
+          "Garnish with cinnamon stick or lemon slice"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Vanilla Steam",
+        "description": "Warm milk and vanilla for pure comfort",
+        "longDescription": "The vanilla steam is a simple warm milk drink with vanilla and light sweetness. It’s a popular caffeine-free option for winding down or emotional moments.",
+        "image": "https://images.unsplash.com/photo-1571685436335-04b70c469967?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Oatly",
+            "description": "Popular oat milk brand"
+          },
+          {
+            "name": "Califia Farms",
+            "description": "Plant-based beverages"
+          }
+        ],
+        "recipe": [
+          "1 cup milk",
+          "1/4 tsp vanilla extract",
+          "1 tsp honey or syrup"
+        ],
+        "instructions": [
+          "Heat milk in a small saucepan until steaming",
+          "Add vanilla and sweetener",
+          "Froth if desired",
+          "Serve in a warm mug and sip slowly"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Amaretto Hot Cocoa",
+        "description": "Chocolatey comfort with a nutty twist",
+        "longDescription": "This indulgent twist on hot chocolate adds a splash of Amaretto liqueur for an almond flavor and a mellow buzz. Ideal for cozying up under a blanket.",
+        "image": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Disaronno",
+            "description": "Famous Italian Amaretto"
+          },
+          {
+            "name": "Ghirardelli",
+            "description": "Premium chocolate powder"
+          }
+        ],
+        "recipe": [
+          "1 cup milk",
+          "2 tbsp cocoa powder",
+          "1 tbsp sugar",
+          "1 oz Amaretto",
+          "Optional: whipped cream"
+        ],
+        "instructions": [
+          "Make hot cocoa with milk, cocoa, and sugar",
+          "Stir in Amaretto after removing from heat",
+          "Top with whipped cream if desired"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Rose Tea",
+        "description": "A fragrant floral tea to soothe emotions",
+        "longDescription": "Rose tea is made from dried rose petals or buds. Its gentle floral aroma is known to relax the nervous system and uplift the mood.",
+        "image": "https://images.unsplash.com/photo-1607330283667-3a8f1711349a?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Harney & Sons",
+            "description": "Floral and fragrant teas"
+          },
+          {
+            "name": "Teabox",
+            "description": "Luxury loose-leaf tea brand"
+          }
+        ],
+        "recipe": [
+          "1 tbsp dried rose petals",
+          "1 cup hot water",
+          "Optional: honey or lemon"
+        ],
+        "instructions": [
+          "Place rose petals in a teapot or infuser",
+          "Pour hot water and steep for 5–7 minutes",
+          "Strain into a mug and add sweetener if desired"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Peanut Butter Banana Smoothie",
+        "description": "Creamy and nostalgic energy lift",
+        "longDescription": "This smoothie combines the comfort of banana and peanut butter with protein and healthy fats. It's ideal for emotional slumps when you still need fuel.",
+        "image": "https://images.unsplash.com/photo-1582649313575-2f230d421cd4?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Jif",
+            "description": "Classic creamy peanut butter"
+          },
+          {
+            "name": "Chobani",
+            "description": "Popular yogurt brand"
+          }
+        ],
+        "recipe": [
+          "1 ripe banana",
+          "1 tbsp peanut butter",
+          "1/2 cup milk",
+          "1/4 cup yogurt",
+          "Optional: honey or oats"
+        ],
+        "instructions": [
+          "Add all ingredients to a blender",
+          "Blend until smooth and creamy",
+          "Serve chilled in a glass"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Coconut Chai",
+        "description": "Spiced tea with a tropical, creamy twist",
+        "longDescription": "Coconut chai is a warm blend of black tea, spices, and creamy coconut milk. It’s grounding and aromatic — perfect for emotional rest.",
+        "image": "https://images.unsplash.com/photo-1607876019673-58b4e7b5d7a0?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Rishi Tea",
+            "description": "Crafted chai blends"
+          },
+          {
+            "name": "Pacific Foods",
+            "description": "Creamy coconut milk"
+          }
+        ],
+        "recipe": [
+          "1 chai tea bag",
+          "1/2 cup hot water",
+          "1/2 cup coconut milk",
+          "Optional: cinnamon or sweetener"
+        ],
+        "instructions": [
+          "Brew chai in hot water for 5 minutes",
+          "Warm coconut milk separately",
+          "Combine and stir gently",
+          "Serve with a sprinkle of cinnamon"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Baileys and Coffee",
+        "description": "Rich and warming with a touch of sweetness",
+        "longDescription": "This cozy combination mixes hot coffee with Baileys Irish Cream for a creamy, indulgent pick-me-up. Great for rainy days and quiet reflection.",
+        "image": "https://images.unsplash.com/photo-1572569521070-11a6b3839d2f?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Baileys",
+            "description": "Creamy Irish liqueur"
+          },
+          {
+            "name": "Lavazza",
+            "description": "Premium Italian coffee beans"
+          }
+        ],
+        "recipe": [
+          "6 oz hot coffee",
+          "1.5 oz Baileys Irish Cream",
+          "Optional: whipped cream"
+        ],
+        "instructions": [
+          "Brew your favorite coffee",
+          "Add Baileys and stir gently",
+          "Top with whipped cream if desired"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Lavender Lemon Balm Tea",
+        "description": "A soft floral-mint herbal tea to calm the mind",
+        "longDescription": "Lavender and lemon balm together create a calming herbal blend that reduces anxiety and promotes emotional balance. Ideal for sad or stressful moments.",
+        "image": "https://images.unsplash.com/photo-1601924817855-05c26cd1f357?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Traditional Medicinals",
+            "description": "Organic calming teas"
+          },
+          {
+            "name": "Pukka",
+            "description": "Soothing herb blends"
+          }
+        ],
+        "recipe": [
+          "1 tsp dried lavender",
+          "1 tsp dried lemon balm",
+          "1 cup hot water"
+        ],
+        "instructions": [
+          "Combine herbs in a tea infuser or teapot",
+          "Pour over hot water and steep for 5–7 minutes",
+          "Strain and enjoy with a splash of honey if needed"
+        ],
+        "alcoholic": false
+      }
+    ]
+  },
+  "stressed": {
+    "icon": "water-outline",
+    "drinks": [
+      {
+        "name": "Green Tea",
+        "description": "A zen-inducing cup of antioxidants",
+        "longDescription": "Green tea is a type of tea made from Camellia sinensis leaves that have not undergone the same withering and oxidation process used to make oolong and black tea. It's known for its health benefits and calming properties.",
+        "image": "https://images.unsplash.com/photo-1711602926021-db8bce24843a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Sencha",
+            "description": "Popular Japanese green tea"
+          },
+          {
+            "name": "Gyokuro",
+            "description": "High-grade, shaded green tea"
+          },
+          {
+            "name": "Matcha",
+            "description": "Finely ground green tea powder"
+          }
+        ],
+        "recipe": [
+          "1 tsp green tea leaves or 1 green tea bag",
+          "1 cup water (175°F/80°C)",
+          "Optional: honey or lemon to taste"
+        ],
+        "instructions": [
+          "Heat water to 175°F/80°C (just before boiling)",
+          "Place tea leaves in a teapot or tea bag in a mug",
+          "Pour hot water over the tea",
+          "Steep for 1-3 minutes, depending on desired strength",
+          "Strain leaves or remove tea bag",
+          "Add honey or lemon if desired"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Lavender Latte",
+        "description": "A calming, floral coffee experience",
+        "longDescription": "A Lavender Latte is a soothing coffee drink that combines espresso with steamed milk and lavender syrup. The floral notes of lavender pair well with the rich coffee, creating a unique and relaxing beverage.",
+        "image": "https://images.unsplash.com/photo-1594056913352-519eeb0a2f0f?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Homemade",
+            "description": "DIY lavender syrup for a personalized touch"
+          },
+          {
+            "name": "Local cafe specialty",
+            "description": "Unique blends from local coffee shops"
+          },
+          {
+            "name": "Lavender syrup brands",
+            "description": "Commercial lavender syrups for consistency"
+          }
+        ],
+        "recipe": [
+          "1 shot espresso or 1/2 cup strong brewed coffee",
+          "1 cup milk (dairy or plant-based)",
+          "1-2 tbsp lavender syrup",
+          "Dried lavender buds for garnish (optional)"
+        ],
+        "instructions": [
+          "Brew espresso or strong coffee",
+          "Steam milk until frothy",
+          "In a mug, combine espresso and lavender syrup",
+          "Pour steamed milk over the coffee, holding back the foam",
+          "Spoon milk foam on top",
+          "Garnish with dried lavender buds if desired"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Cucumber Water",
+        "description": "A refreshing, hydrating stress-reliever",
+        "longDescription": "Cucumber water is a simple, refreshing drink made by infusing water with fresh cucumber slices. It's known for its hydrating properties and subtle, crisp flavor that can help reduce stress and promote relaxation.",
+        "image": "https://images.unsplash.com/photo-1527499861446-cc219aea45ae?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Homemade",
+            "description": "Freshly made cucumber water"
+          },
+          {
+            "name": "Hint",
+            "description": "Flavored water brand with cucumber option"
+          },
+          {
+            "name": "Spindrift",
+            "description": "Sparkling water with real cucumber"
+          }
+        ],
+        "recipe": [
+          "1/2 cucumber, thinly sliced",
+          "4 cups cold water",
+          "Optional: fresh mint leaves or lemon slices"
+        ],
+        "instructions": [
+          "Wash cucumber thoroughly and slice thinly",
+          "Place cucumber slices in a pitcher",
+          "Add mint leaves or lemon slices if using",
+          "Fill the pitcher with cold water",
+          "Refrigerate for at least 1 hour to infuse",
+          "Serve over ice and enjoy"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Ashwagandha Moon Milk",
+        "description": "An adaptogenic bedtime drink for stress relief",
+        "longDescription": "Moon milk made with ashwagandha helps the body adapt to stress and supports sleep. With warm milk, honey, and calming spices, it's a relaxing nighttime ritual.",
+        "image": "https://images.unsplash.com/photo-1585238342028-2a08f38ab5da?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Organic India",
+            "description": "Ayurvedic wellness products"
+          },
+          {
+            "name": "Anima Mundi",
+            "description": "Adaptogenic herbal blends"
+          }
+        ],
+        "recipe": [
+          "1 cup milk (dairy or plant-based)",
+          "1/2 tsp ashwagandha powder",
+          "1/4 tsp cinnamon",
+          "1/2 tsp honey or maple syrup",
+          "Optional: pinch of nutmeg or cardamom"
+        ],
+        "instructions": [
+          "Warm milk in a saucepan",
+          "Whisk in ashwagandha and spices",
+          "Simmer for 5 minutes on low heat",
+          "Sweeten with honey and serve warm"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Chamomile & Honey Tea",
+        "description": "A gentle herbal blend to calm nerves",
+        "longDescription": "Chamomile tea has natural sedative properties and is commonly used for reducing anxiety. Adding honey enhances its soothing effect.",
+        "image": "https://images.unsplash.com/photo-1652620386215-d7aaf6edf856?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Celestial Seasonings",
+            "description": "Popular calming teas"
+          },
+          {
+            "name": "Bigelow",
+            "description": "Classic herbal tea brand"
+          }
+        ],
+        "recipe": [
+          "1 chamomile tea bag",
+          "1 cup hot water",
+          "1 tsp honey"
+        ],
+        "instructions": [
+          "Boil water and steep tea bag for 5–7 minutes",
+          "Remove tea bag and stir in honey",
+          "Sip slowly, preferably in a quiet space"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Peppermint & Lemon Balm Infusion",
+        "description": "Cooling and calming herbal combo",
+        "longDescription": "Peppermint and lemon balm are both known to ease digestive tension and reduce stress. Together they make a refreshing, relaxing tea.",
+        "image": "https://images.unsplash.com/photo-1587734800139-ec1c95d56f14?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Pukka",
+            "description": "Herbal tea experts"
+          },
+          {
+            "name": "Traditional Medicinals",
+            "description": "Organic blends for wellness"
+          }
+        ],
+        "recipe": [
+          "1 tsp dried peppermint",
+          "1 tsp dried lemon balm",
+          "1 cup hot water",
+          "Optional: honey or lemon slice"
+        ],
+        "instructions": [
+          "Add herbs to a tea infuser or teapot",
+          "Pour hot water and steep for 5–10 minutes",
+          "Strain and sweeten if desired"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Sparkling Magnesium Water",
+        "description": "Hydrating with a mineral stress reliever",
+        "longDescription": "Magnesium helps relax the nervous system. Sparkling magnesium water combines light bubbles with calming minerals, ideal during high-stress moments.",
+        "image": "https://images.unsplash.com/photo-1589308078050-97289ecf6637?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Recess",
+            "description": "Sparkling water with magnesium & adaptogens"
+          },
+          {
+            "name": "Calm",
+            "description": "Magnesium powder for drinks"
+          }
+        ],
+        "recipe": [
+          "8 oz sparkling water",
+          "1 scoop magnesium powder (unflavored or lightly flavored)",
+          "Optional: squeeze of citrus"
+        ],
+        "instructions": [
+          "Dissolve magnesium in sparkling water",
+          "Stir gently and serve over ice",
+          "Sip slowly"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Honey Lemon Ginger Tea",
+        "description": "A spicy-sweet natural stress soother",
+        "longDescription": "Ginger helps reduce inflammation and improve circulation, while lemon and honey soothe the senses. A perfect drink for when stress shows up physically.",
+        "image": "https://images.unsplash.com/photo-1605296867424-35fc25c9210b?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Numi",
+            "description": "Organic herbal tea blends"
+          },
+          {
+            "name": "Yogi Tea",
+            "description": "Functional teas for wellness"
+          }
+        ],
+        "recipe": [
+          "1 tsp grated fresh ginger",
+          "1 tbsp honey",
+          "Juice of 1/2 lemon",
+          "1 cup hot water"
+        ],
+        "instructions": [
+          "Steep ginger in hot water for 5 minutes",
+          "Strain and add lemon juice and honey",
+          "Stir and serve hot"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Coconut Water with Mint",
+        "description": "Lightly sweet, electrolyte-rich calm",
+        "longDescription": "Coconut water replenishes electrolytes and supports hydration. Adding mint makes it more refreshing and uplifting when under mental pressure.",
+        "image": "https://images.unsplash.com/photo-1603067982571-02f8f40e7db4?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Vita Coco",
+            "description": "Popular coconut water brand"
+          },
+          {
+            "name": "Harmless Harvest",
+            "description": "Organic pink coconut water"
+          }
+        ],
+        "recipe": [
+          "1 cup coconut water",
+          "Fresh mint leaves",
+          "Ice cubes"
+        ],
+        "instructions": [
+          "Add mint leaves to a glass and gently muddle",
+          "Pour in chilled coconut water",
+          "Add ice and stir"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Oat Milk Chai",
+        "description": "A creamy, spiced comfort drink",
+        "longDescription": "Chai spices like cardamom and cinnamon are warming and calming. Using oat milk makes this drink creamy, grounding, and perfect for reducing tension.",
+        "image": "https://images.unsplash.com/photo-1603052617233-996901776fce?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Pacific Chai",
+            "description": "Instant chai blends"
+          },
+          {
+            "name": "Oatly",
+            "description": "Creamy oat milk brand"
+          }
+        ],
+        "recipe": [
+          "1 chai tea bag or 1 tsp loose chai",
+          "1/2 cup hot water",
+          "1/2 cup steamed oat milk",
+          "Optional: dash of cinnamon or vanilla"
+        ],
+        "instructions": [
+          "Steep chai in hot water for 5 minutes",
+          "Heat oat milk separately",
+          "Combine and garnish with cinnamon"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Passionflower Tea",
+        "description": "Natural herb for easing anxious tension",
+        "longDescription": "Passionflower is known for reducing anxiety and improving sleep quality. It’s a great herbal tea choice during emotionally intense moments.",
+        "image": "https://images.unsplash.com/photo-1604754742626-bccbba5f6a88?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Traditional Medicinals",
+            "description": "Wellness herbal teas"
+          },
+          {
+            "name": "Gaia Herbs",
+            "description": "High-quality medicinal herbs"
+          }
+        ],
+        "recipe": [
+          "1 tsp dried passionflower or 1 tea bag",
+          "1 cup hot water"
+        ],
+        "instructions": [
+          "Steep tea bag or herb in hot water for 5–10 minutes",
+          "Strain and enjoy warm",
+          "Best taken in the evening or after work"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Iced Rose Lemonade",
+        "description": "Floral and citrusy — calming and refreshing",
+        "longDescription": "Rose water adds floral tranquility, while lemon provides brightness. Together, they create a cooling drink that calms both the body and the mind.",
+        "image": "https://images.unsplash.com/photo-1582856187368-27b3a50f21f3?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Fentimans",
+            "description": "Botanical lemonades"
+          },
+          {
+            "name": "Cortas",
+            "description": "Pure rose water"
+          }
+        ],
+        "recipe": [
+          "1 tbsp lemon juice",
+          "1/2 tsp rose water",
+          "1 cup cold water or sparkling water",
+          "Honey or sugar to taste"
+        ],
+        "instructions": [
+          "Mix all ingredients in a glass",
+          "Stir well and add ice",
+          "Garnish with mint or rose petals"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Adaptogen Smoothie",
+        "description": "A nutrient-packed blend to balance cortisol",
+        "longDescription": "Made with stress-fighting ingredients like maca, ashwagandha, banana, and almond butter, this smoothie nourishes the nervous system and restores energy.",
+        "image": "https://images.unsplash.com/photo-1615485296502-78d5e444cdd6?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Moon Juice",
+            "description": "Adaptogenic powder blends"
+          },
+          {
+            "name": "Navitas Organics",
+            "description": "Superfoods for smoothies"
+          }
+        ],
+        "recipe": [
+          "1 banana",
+          "1 tbsp almond butter",
+          "1/2 tsp maca powder",
+          "1/2 tsp ashwagandha",
+          "1 cup almond milk",
+          "Ice cubes"
+        ],
+        "instructions": [
+          "Add all ingredients to a blender",
+          "Blend until smooth and creamy",
+          "Serve immediately for best flavor"
+        ],
+        "alcoholic": false
+      }
+    ]
+  },
+  "romantic": {
+    "icon": "heart-outline",
+    "drinks": [
+      {
+        "name": "Champagne",
+        "description": "Bubbly elegance for special moments",
+        "longDescription": "Champagne is a sparkling wine produced from grapes grown in the Champagne region of northeastern France. It's associated with luxury and celebration, making it perfect for romantic occasions.",
+        "image": "https://images.unsplash.com/photo-1546567075-d7113bee3c4a?q=80&w=2897&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Moët & Chandon",
+            "description": "Renowned Champagne house"
+          },
+          {
+            "name": "Veuve Clicquot",
+            "description": "Prestigious Champagne brand"
+          },
+          {
+            "name": "Dom Pérignon",
+            "description": "Luxury vintage Champagne"
+          }
+        ],
+        "recipe": [
+          "Chill Champagne bottle for at least 3 hours"
+        ],
+        "instructions": [
+          "Remove Champagne from refrigerator",
+          "Carefully remove the foil and wire cage",
+          "Hold the bottle at a 45-degree angle",
+          "Slowly twist the bottle, not the cork, until it releases with a gentle hiss",
+          "Pour into fluted Champagne glasses",
+          "Serve immediately to enjoy the bubbles"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Rosé Wine",
+        "description": "A pink, fruity wine for romantic evenings",
+        "longDescription": "Rosé wine is a type of wine that incorporates some of the color from the grape skins, but not enough to qualify it as a red wine. It's known for its pink color and refreshing taste, perfect for romantic settings.",
+        "image": "https://images.unsplash.com/photo-1660814807174-85a4ce3af9ea?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Whispering Angel",
+            "description": "Popular Provence rosé"
+          },
+          {
+            "name": "Miraval",
+            "description": "Elegant rosé from Provence"
+          },
+          {
+            "name": "La Vieille Ferme",
+            "description": "Affordable, quality rosé"
+          }
+        ],
+        "recipe": [
+          "Chill rosé wine for 2-3 hours before serving"
+        ],
+        "instructions": [
+          "Remove rosé from refrigerator",
+          "Open the bottle",
+          "Pour into wine glasses, filling about 1/3 full",
+          "Serve and enjoy at a temperature between 50-60°F (10-15°C)"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Whiskey Cocktail",
+        "description": "A sophisticated blend for a romantic night",
+        "longDescription": "A whiskey cocktail can be a variety of mixed drinks with whiskey as the primary ingredient. For a romantic setting, consider a classic like an Old Fashioned or a Manhattan, which offer a perfect balance of flavors.",
+        "image": "https://images.unsplash.com/photo-1514362453360-8f94243c9996?q=80&w=2726&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Jack Daniel's Honey",
+            "description": "Smooth, honey-flavored whiskey"
+          },
+          {
+            "name": "Maker's Mark",
+            "description": "Premium Kentucky bourbon"
+          },
+          {
+            "name": "Woodford Reserve",
+            "description": "Craft Kentucky bourbon"
+          }
+        ],
+        "recipe": [
+          "2 oz whiskey",
+          "1/4 oz simple syrup",
+          "2-3 dashes Angostura bitters",
+          "Orange peel for garnish"
+        ],
+        "instructions": [
+          "In a mixing glass, combine whiskey, simple syrup, and bitters",
+          "Add ice and stir until well-chilled",
+          "Strain into a rocks glass over a large ice cube",
+          "Express the oils of an orange peel over the drink",
+          "Garnish with the orange peel and serve"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Strawberry Bellini",
+        "description": "A fruity, bubbly cocktail for sweet moments",
+        "longDescription": "The Strawberry Bellini is a romantic twist on the classic Bellini, blending fresh strawberries and Prosecco. It's vibrant, sweet, and perfect for brunch dates or special toasts.",
+        "image": "https://images.unsplash.com/photo-1588459461926-6a7c12a4b02c?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "La Marca",
+            "description": "Fresh and fruity Prosecco"
+          },
+          {
+            "name": "Riondo",
+            "description": "Elegant Italian Prosecco"
+          }
+        ],
+        "recipe": [
+          "2 oz fresh strawberry purée",
+          "4 oz chilled Prosecco"
+        ],
+        "instructions": [
+          "Add strawberry purée to a Champagne flute",
+          "Slowly top with Prosecco",
+          "Gently stir to mix",
+          "Garnish with a strawberry slice"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Red Sangria",
+        "description": "A vibrant wine punch with a fruity twist",
+        "longDescription": "Red Sangria is a shareable Spanish drink made from red wine, fresh fruits, and a touch of brandy. It’s colorful, fun, and ideal for romantic summer evenings.",
+        "image": "https://images.unsplash.com/photo-1600181953605-17d5b0ba202e?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Campo Viejo",
+            "description": "Smooth Spanish red wine"
+          },
+          {
+            "name": "Torres",
+            "description": "Traditional Spanish winery"
+          }
+        ],
+        "recipe": [
+          "1 bottle red wine",
+          "1/4 cup brandy",
+          "1/4 cup orange juice",
+          "1 orange, sliced",
+          "1 apple, sliced",
+          "1/2 lemon, sliced"
+        ],
+        "instructions": [
+          "Combine all ingredients in a large pitcher",
+          "Refrigerate for at least 2 hours",
+          "Serve over ice in wine glasses"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Pink Gin & Tonic",
+        "description": "A flirty twist on the classic G&T",
+        "longDescription": "Pink gin adds a delicate, fruity note to the standard gin and tonic. It's crisp, lightly sweet, and visually stunning — great for a romantic toast.",
+        "image": "https://images.unsplash.com/photo-1599914371514-e504b2c5fa07?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Gordon's Pink Gin",
+            "description": "Fruity and floral gin"
+          },
+          {
+            "name": "Fever-Tree",
+            "description": "Premium tonic water"
+          }
+        ],
+        "recipe": [
+          "2 oz pink gin",
+          "4 oz tonic water",
+          "Fresh berries or grapefruit for garnish"
+        ],
+        "instructions": [
+          "Fill a balloon glass with ice",
+          "Pour in pink gin and tonic",
+          "Stir gently and garnish"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Chocolate Martini",
+        "description": "Decadent dessert in a glass",
+        "longDescription": "The Chocolate Martini is rich, silky, and perfect for dessert. Made with vodka and chocolate liqueur, it’s a drink to share over slow sips and soft music.",
+        "image": "https://images.unsplash.com/photo-1612197599891-5fc426cf55a3?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Godiva Liqueur",
+            "description": "Luxurious chocolate liqueur"
+          },
+          {
+            "name": "Grey Goose",
+            "description": "Smooth premium vodka"
+          }
+        ],
+        "recipe": [
+          "2 oz vodka",
+          "1 oz chocolate liqueur",
+          "Optional: 1/2 oz Irish cream"
+        ],
+        "instructions": [
+          "Shake all ingredients with ice",
+          "Strain into a chilled martini glass",
+          "Garnish with chocolate shavings or syrup"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Rose Lemonade",
+        "description": "A floral, non-alcoholic delight",
+        "longDescription": "Rose lemonade is a fragrant and refreshing drink, blending delicate rose water with tangy lemon. It's non-alcoholic and perfect for gentle, romantic moments.",
+        "image": "https://images.unsplash.com/photo-1525385133514-4cc5c378a581?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Belvoir Farm",
+            "description": "Elegant botanical drinks"
+          },
+          {
+            "name": "Fentimans",
+            "description": "Premium rose lemonade"
+          }
+        ],
+        "recipe": [
+          "1 oz fresh lemon juice",
+          "1/2 tsp rose water",
+          "4 oz sparkling water",
+          "Sugar to taste"
+        ],
+        "instructions": [
+          "Mix lemon juice, rose water, and sugar",
+          "Top with sparkling water",
+          "Serve over ice with rose petals or lemon twist"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "French 75",
+        "description": "A bubbly cocktail with a citrus spark",
+        "longDescription": "The French 75 combines gin, lemon juice, sugar, and Champagne for an elegant, uplifting drink with a slightly tart finish — perfect for romantic dinners.",
+        "image": "https://images.unsplash.com/photo-1611284709282-60b0c5a521fd?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Bombay Sapphire",
+            "description": "Botanical-rich gin"
+          },
+          {
+            "name": "Moët & Chandon",
+            "description": "Classic Champagne"
+          }
+        ],
+        "recipe": [
+          "1 oz gin",
+          "1/2 oz lemon juice",
+          "1/2 oz simple syrup",
+          "2 oz Champagne"
+        ],
+        "instructions": [
+          "Shake gin, lemon, and syrup with ice",
+          "Strain into a flute",
+          "Top with Champagne",
+          "Garnish with a lemon twist"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Strawberry Milkshake",
+        "description": "Sweet, creamy, and shareable",
+        "longDescription": "A classic strawberry milkshake is a nostalgic and sweet non-alcoholic treat. Great for sharing with two straws and smiles.",
+        "image": "https://images.unsplash.com/photo-1571867424483-d69e2cc84a66?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Tillamook",
+            "description": "Rich and creamy ice cream"
+          },
+          {
+            "name": "Oatly",
+            "description": "Smooth dairy-free milk"
+          }
+        ],
+        "recipe": [
+          "1 cup strawberries",
+          "2 scoops vanilla ice cream",
+          "1/2 cup milk",
+          "Optional: whipped cream"
+        ],
+        "instructions": [
+          "Blend strawberries, ice cream, and milk",
+          "Pour into a tall glass",
+          "Top with whipped cream and serve with two straws"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Mulled Wine",
+        "description": "Warm and spiced for winter romance",
+        "longDescription": "Mulled wine is a cozy, festive drink made with red wine, spices, and citrus. Perfect for romantic nights by the fire or cold-weather cuddles.",
+        "image": "https://images.unsplash.com/photo-1609257282933-cb3e7e69f282?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Barefoot Merlot",
+            "description": "Smooth and budget-friendly red"
+          },
+          {
+            "name": "Garnacha",
+            "description": "Spanish red wine great for mulling"
+          }
+        ],
+        "recipe": [
+          "1 bottle red wine",
+          "1/4 cup brandy",
+          "2 tbsp honey or sugar",
+          "1 orange (sliced)",
+          "Cinnamon sticks and cloves"
+        ],
+        "instructions": [
+          "Combine ingredients in a pot",
+          "Simmer gently (do not boil) for 15 minutes",
+          "Strain and serve warm in mugs"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Affogato",
+        "description": "A romantic Italian dessert drink",
+        "longDescription": "Affogato is an Italian dessert-drink made by pouring hot espresso over cold vanilla gelato or ice cream. It’s simple, indulgent, and ideal for post-dinner romance.",
+        "image": "https://images.unsplash.com/photo-1588666309990-005297902204?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Illy",
+            "description": "Premium Italian espresso"
+          },
+          {
+            "name": "Talenti",
+            "description": "Smooth gelato"
+          }
+        ],
+        "recipe": [
+          "1 scoop vanilla ice cream or gelato",
+          "1 shot of hot espresso"
+        ],
+        "instructions": [
+          "Place scoop of ice cream in a dessert glass",
+          "Pour hot espresso over it just before serving",
+          "Enjoy immediately with a spoon"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Kir Royale",
+        "description": "A French classic with berry sweetness",
+        "longDescription": "Kir Royale is a simple yet elegant cocktail made by adding crème de cassis (blackcurrant liqueur) to Champagne. It’s rich, fruity, and sparkling — ideal for romantic toasts.",
+        "image": "https://images.unsplash.com/photo-1612198431130-b5db15e5a79e?q=80&w=2940&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Crème de Cassis de Dijon",
+            "description": "Classic French blackcurrant liqueur"
+          },
+          {
+            "name": "Champagne Taittinger",
+            "description": "Elegant and light Champagne"
+          }
+        ],
+        "recipe": [
+          "1/2 oz crème de cassis",
+          "4 oz Champagne"
+        ],
+        "instructions": [
+          "Pour crème de cassis into a flute",
+          "Top gently with Champagne",
+          "Serve without stirring"
+        ],
+        "alcoholic": true
+      }
+    ]
+  },
+  "excited": {
+    "icon": "fire",
+    "drinks": [
+      {
+        "name": "Cosmopolitan",
+        "description": "A vibrant, fruity cocktail perfect for celebrations",
+        "longDescription": "The Cosmopolitan is a vodka-based cocktail that combines the kick of citrus with the sweetness of cranberry. It's a perfect drink for those exciting moments when you want to celebrate life.",
+        "image": "https://images.unsplash.com/photo-1648231837322-ff07105b26f9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Absolut Citron",
+            "description": "A citrus-flavored vodka that forms the base of a great Cosmo"
+          },
+          {
+            "name": "Cointreau",
+            "description": "An orange-flavored triple sec that adds depth to the cocktail"
+          },
+          {
+            "name": "Ocean Spray Cranberry Juice",
+            "description": "The classic choice for the fruity component"
+          }
+        ],
+        "recipe": [
+          "1.5 oz citrus vodka",
+          "1 oz cranberry juice",
+          "0.5 oz fresh lime juice",
+          "0.5 oz triple sec",
+          "Orange twist for garnish"
+        ],
+        "instructions": [
+          "Fill a cocktail shaker with ice",
+          "Add vodka, cranberry juice, lime juice, and triple sec",
+          "Shake well for about 20 seconds",
+          "Strain into a chilled martini glass",
+          "Garnish with an orange twist"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Champagne Cocktail",
+        "description": "A bubbly, elegant drink for joyous occasions",
+        "longDescription": "A Champagne Cocktail is a classic drink that adds a touch of sweetness and complexity to traditional Champagne. It's perfect for celebrations and adds a festive touch to any exciting event.",
+        "image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Moët & Chandon",
+            "description": "Renowned Champagne house"
+          },
+          {
+            "name": "Veuve Clicquot",
+            "description": "Prestigious Champagne brand"
+          },
+          {
+            "name": "Dom Pérignon",
+            "description": "Luxury vintage Champagne"
+          }
+        ],
+        "recipe": [
+          "1 sugar cube",
+          "2-3 dashes Angostura bitters",
+          "Chilled Champagne",
+          "Lemon twist for garnish"
+        ],
+        "instructions": [
+          "Place a sugar cube in a Champagne flute",
+          "Dash Angostura bitters onto the sugar cube",
+          "Slowly fill the glass with chilled Champagne",
+          "Garnish with a lemon twist",
+          "Serve immediately and enjoy the bubbles"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Sangria",
+        "description": "A fruity, wine-based punch perfect for parties",
+        "longDescription": "Sangria is a Spanish-origin punch that typically consists of red wine and chopped fruit, often with other ingredients such as orange juice or brandy. It's a refreshing and festive drink ideal for excited gatherings.",
+        "image": "https://images.unsplash.com/photo-1617641326660-164119fdbdfd?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Rioja red wine",
+            "description": "Traditional Spanish wine for authentic sangria"
+          },
+          {
+            "name": "Triple sec",
+            "description": "Orange-flavored liqueur to enhance fruitiness"
+          },
+          {
+            "name": "Fresh seasonal fruits",
+            "description": "For added flavor and visual appeal"
+          }
+        ],
+        "recipe": [
+          "1 bottle red wine",
+          "1/4 cup brandy",
+          "1/4 cup orange juice",
+          "2 tbsp sugar",
+          "Assorted chopped fruits (oranges, apples, peaches)",
+          "1 cup sparkling water (optional)"
+        ],
+        "instructions": [
+          "In a large pitcher, combine wine, brandy, orange juice, and sugar",
+          "Stir until sugar dissolves",
+          "Add chopped fruits",
+          "Refrigerate for at least 2 hours or overnight",
+          "Before serving, add sparkling water if desired",
+          "Serve over ice and enjoy"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Espresso Martini",
+        "description": "A classy, caffeinated cocktail to keep the night going",
+        "longDescription": "The Espresso Martini blends vodka, coffee liqueur, and fresh espresso into a sleek, energizing drink. It’s perfect for when you’re hyped and want to stay sharp.",
+        "image": "https://images.unsplash.com/photo-1630336306441-22c17870f345?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Kahlúa",
+            "description": "Coffee liqueur with rich flavor"
+          },
+          {
+            "name": "Absolut Vodka",
+            "description": "Clean vodka base for a smooth finish"
+          },
+          {
+            "name": "Illy Espresso",
+            "description": "High-quality espresso shot"
+          }
+        ],
+        "recipe": [
+          "2 oz vodka",
+          "1 oz coffee liqueur",
+          "1 oz freshly brewed espresso",
+          "Ice cubes",
+          "Coffee beans for garnish"
+        ],
+        "instructions": [
+          "Add vodka, coffee liqueur, and espresso to a shaker with ice",
+          "Shake vigorously until chilled",
+          "Strain into a chilled martini glass",
+          "Garnish with coffee beans"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Paloma",
+        "description": "A zesty tequila and grapefruit highball",
+        "longDescription": "The Paloma is a lively Mexican cocktail made with tequila and grapefruit soda. It’s tangy, bubbly, and perfect when you’re feeling energized and spontaneous.",
+        "image": "https://images.unsplash.com/photo-1627843563095-fcd52b4cb0c9?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Espolon Tequila",
+            "description": "Smooth and peppery, ideal for cocktails"
+          },
+          {
+            "name": "Jarritos Grapefruit Soda",
+            "description": "Authentic and refreshing"
+          },
+          {
+            "name": "Fresh Lime",
+            "description": "Adds bright acidity"
+          }
+        ],
+        "recipe": [
+          "2 oz tequila",
+          "1/2 oz lime juice",
+          "4 oz grapefruit soda",
+          "Pinch of salt",
+          "Lime wedge for garnish"
+        ],
+        "instructions": [
+          "Fill a glass with ice",
+          "Add tequila and lime juice",
+          "Top with grapefruit soda",
+          "Add a pinch of salt",
+          "Stir and garnish with a lime wedge"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Matcha Lemonade",
+        "description": "A bright blend of earthy matcha and citrus",
+        "longDescription": "Matcha Lemonade combines green tea’s mellow bitterness with tangy lemonade. It’s crisp, refreshing, and gives a natural energy lift without the crash.",
+        "image": "https://images.unsplash.com/photo-1600891963935-6f109f1e08fb?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Ippodo Matcha",
+            "description": "Premium Japanese matcha powder"
+          },
+          {
+            "name": "Organic Lemons",
+            "description": "Fresh-squeezed juice for bold flavor"
+          },
+          {
+            "name": "Honey",
+            "description": "Balances out the tartness"
+          }
+        ],
+        "recipe": [
+          "1 tsp matcha powder",
+          "1/4 cup hot water",
+          "3/4 cup cold lemonade",
+          "Ice"
+        ],
+        "instructions": [
+          "Whisk matcha with hot water until smooth",
+          "Fill a glass with ice",
+          "Pour lemonade over the ice",
+          "Top with matcha mixture and stir gently"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Pineapple Mojito",
+        "description": "A tropical twist on the classic minty cocktail",
+        "longDescription": "The Pineapple Mojito is an energetic, fun drink bursting with citrus, mint, and tropical fruit. It’s perfect for lively gatherings and upbeat moods.",
+        "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f91?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Bacardi Superior Rum",
+            "description": "A classic rum with light body"
+          },
+          {
+            "name": "Fresh Pineapple Juice",
+            "description": "Naturally sweet and vibrant"
+          },
+          {
+            "name": "Mint Leaves",
+            "description": "Fresh and fragrant for cooling effect"
+          }
+        ],
+        "recipe": [
+          "2 oz white rum",
+          "1 oz lime juice",
+          "1 oz pineapple juice",
+          "1 tbsp sugar",
+          "Mint leaves",
+          "Soda water",
+          "Ice"
+        ],
+        "instructions": [
+          "Muddle mint and sugar in a glass",
+          "Add rum, lime juice, and pineapple juice",
+          "Fill with ice and top with soda water",
+          "Stir and garnish with mint sprig"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Guarana Energy Fizz",
+        "description": "A bubbly, fruity, non-alcoholic energy drink",
+        "longDescription": "Guarana is a natural stimulant from the Amazon, and this drink combines it with citrus and sparkling water for a fizzy, caffeine-rich mood boost.",
+        "image": "https://images.unsplash.com/photo-1629991932983-08c03c75d1bb?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Guarana Antarctica",
+            "description": "Popular Brazilian soda with natural energy"
+          },
+          {
+            "name": "Lime Juice",
+            "description": "Adds brightness and tang"
+          },
+          {
+            "name": "Sparkling Water",
+            "description": "For that fizzy lift"
+          }
+        ],
+        "recipe": [
+          "3 oz guarana soda",
+          "2 oz lime juice",
+          "3 oz sparkling water",
+          "Ice cubes"
+        ],
+        "instructions": [
+          "Combine guarana soda and lime juice in a glass with ice",
+          "Top with sparkling water",
+          "Stir gently and serve chilled"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Tequila Sunrise",
+        "description": "A vibrant cocktail with layered colors and bold flavor",
+        "longDescription": "Named for its stunning look, the Tequila Sunrise is fruity and vivid, great for kicking off exciting nights or celebrating big moments.",
+        "image": "https://images.unsplash.com/photo-1590080876632-208b35dc9c91?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Jose Cuervo",
+            "description": "Affordable and reliable tequila"
+          },
+          {
+            "name": "Grenadine",
+            "description": "For sweetness and that red hue"
+          },
+          {
+            "name": "Orange Juice",
+            "description": "Fresh and juicy"
+          }
+        ],
+        "recipe": [
+          "2 oz tequila",
+          "4 oz orange juice",
+          "1/2 oz grenadine",
+          "Orange slice for garnish"
+        ],
+        "instructions": [
+          "Fill a glass with ice",
+          "Add tequila and orange juice",
+          "Slowly pour in grenadine to create a layered effect",
+          "Garnish and serve"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Yerba Mate Spritz",
+        "description": "A sparkling herbal pick-me-up",
+        "longDescription": "Yerba Mate is a South American tea known for its balanced caffeine hit. This spritz mixes it with citrus and sparkling water for a zippy refreshment.",
+        "image": "https://images.unsplash.com/photo-1655635649861-8e59795e9730?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Guayakí Yerba Mate",
+            "description": "Popular brand with bold flavor"
+          },
+          {
+            "name": "Sparkling Water",
+            "description": "Brings bubbles and brightness"
+          },
+          {
+            "name": "Lemon",
+            "description": "Zesty citrus kick"
+          }
+        ],
+        "recipe": [
+          "1 cup brewed yerba mate, chilled",
+          "1 oz lemon juice",
+          "3 oz sparkling water",
+          "Ice and lemon slices"
+        ],
+        "instructions": [
+          "Add ice to a tall glass",
+          "Pour in yerba mate and lemon juice",
+          "Top with sparkling water",
+          "Stir and garnish"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Neon Lemon Drop",
+        "description": "A tangy, electric yellow vodka cocktail",
+        "longDescription": "Zesty and bright, the Neon Lemon Drop is a lemon vodka-based drink that’s sweet, sour, and made to celebrate. It’s like a party in a glass.",
+        "image": "https://images.unsplash.com/photo-1559561854-83784b78759d?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Ciroc Lemon Vodka",
+            "description": "Lemon-flavored and smooth"
+          },
+          {
+            "name": "Triple Sec",
+            "description": "Orange liqueur for depth"
+          },
+          {
+            "name": "Sugar Rim",
+            "description": "Makes each sip pop"
+          }
+        ],
+        "recipe": [
+          "2 oz lemon vodka",
+          "1 oz triple sec",
+          "1 oz lemon juice",
+          "Sugar for rimming the glass",
+          "Lemon twist for garnish"
+        ],
+        "instructions": [
+          "Rim a chilled martini glass with sugar",
+          "Shake all ingredients with ice",
+          "Strain into glass",
+          "Garnish and enjoy"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Coconut Water Refresher",
+        "description": "Hydrating, tropical, and revitalizing",
+        "longDescription": "This drink blends coconut water, cucumber, and mint for a light and hydrating refresher, perfect when you're excited and need to keep going strong.",
+        "image": "https://images.unsplash.com/photo-1580910051074-7e7efc54e105?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Vita Coco",
+            "description": "Pure and natural coconut water"
+          },
+          {
+            "name": "Cucumber",
+            "description": "Adds a cool, spa-like freshness"
+          },
+          {
+            "name": "Mint Leaves",
+            "description": "Bright herbal note"
+          }
+        ],
+        "recipe": [
+          "1 cup coconut water",
+          "5 slices cucumber",
+          "4 mint leaves",
+          "Ice"
+        ],
+        "instructions": [
+          "Muddle mint and cucumber in a shaker",
+          "Add coconut water and shake gently",
+          "Strain into glass with ice",
+          "Garnish with mint or cucumber"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Sparkling Mango Chili",
+        "description": "A sweet and spicy mocktail to match your energy",
+        "longDescription": "This drink is playful and bold, with mango nectar, lime, and a hint of chili. Bubbly and tropical, it brings just the right kick for an exciting mood.",
+        "image": "https://images.unsplash.com/photo-1592845132375-60ae05d4c53d?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Ceres Mango Juice",
+            "description": "Thick, rich mango nectar"
+          },
+          {
+            "name": "Tajin",
+            "description": "A chili-lime salt rim for extra flare"
+          },
+          {
+            "name": "Topo Chico",
+            "description": "Crisp sparkling mineral water"
+          }
+        ],
+        "recipe": [
+          "3 oz mango nectar",
+          "1 oz lime juice",
+          "3 oz sparkling water",
+          "Pinch of chili powder or Tajin",
+          "Ice"
+        ],
+        "instructions": [
+          "Rim glass with Tajin",
+          "Add mango nectar, lime juice, and ice",
+          "Top with sparkling water",
+          "Stir gently and garnish with chili slice or mango wedge"
+        ],
+        "alcoholic": false
+      }
+    ]
+  },
+  "melancholy": {
+    "icon": "weather-pouring",
+    "drinks": [
+      {
+        "name": "Irish Coffee",
+        "description": "A warming blend of coffee and whiskey",
+        "longDescription": "Irish Coffee is a cocktail of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream. It's the perfect drink for a rainy day or when you're feeling a bit blue.",
+        "image": "https://images.unsplash.com/photo-1549057219-0c0be1287566?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Jameson Irish Whiskey",
+            "description": "A smooth whiskey that blends well with coffee"
+          },
+          {
+            "name": "Bushmill's Original",
+            "description": "Another great Irish whiskey option"
+          },
+          {
+            "name": "Lavazza coffee",
+            "description": "A rich, full-bodied coffee to form the base"
+          }
+        ],
+        "recipe": [
+          "1 cup hot brewed coffee",
+          "1 tablespoon brown sugar",
+          "1.5 oz Irish whiskey",
+          "Lightly whipped cream"
+        ],
+        "instructions": [
+          "Fill a mug with hot water to preheat it, then empty",
+          "Pour hot coffee into the warmed mug until it's about 3/4 full",
+          "Add brown sugar and stir until completely dissolved",
+          "Blend in Irish whiskey",
+          "Top with a collar of lightly whipped cream",
+          "Serve hot"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Hot Toddy",
+        "description": "A soothing, warm cocktail with whiskey and honey",
+        "longDescription": "A Hot Toddy is a mixed drink made of liquor and water with honey, herbs, and spices, served hot. It's often used as a cold remedy and is perfect for comforting on melancholy days.",
+        "image": "https://images.unsplash.com/photo-1676037882407-d3ac62533c26?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Glenlivet",
+            "description": "Smooth Scotch whisky"
+          },
+          {
+            "name": "Honey",
+            "description": "Local or organic honey for best flavor"
+          },
+          {
+            "name": "Lemon",
+            "description": "Fresh lemon for citrus notes"
+          }
+        ],
+        "recipe": [
+          "2 oz whiskey",
+          "1 tbsp honey",
+          "1/2 oz lemon juice",
+          "1 cup hot water",
+          "Cinnamon stick and lemon wheel for garnish"
+        ],
+        "instructions": [
+          "In a mug, combine whiskey and honey",
+          "Add hot water and stir until honey is dissolved",
+          "Add lemon juice and stir",
+          "Garnish with a cinnamon stick and lemon wheel",
+          "Serve hot and sip slowly"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Mulled Wine",
+        "description": "A comforting, spiced wine perfect for cold days",
+        "longDescription": "Mulled wine is a warm, spiced wine typically made with red wine along with various mulling spices and sometimes raisins. It's a traditional drink during winter, especially around Christmas.",
+        "image": "https://images.unsplash.com/photo-1542143708653-1a0d78f64f21?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Merlot",
+            "description": "Full-bodied red wine as a base"
+          },
+          {
+            "name": "Cinnamon sticks",
+            "description": "For aromatic spice"
+          },
+          {
+            "name": "Cloves",
+            "description": "Adds warmth and depth to the flavor"
+          }
+        ],
+        "recipe": [
+          "1 bottle red wine",
+          "1 orange, sliced",
+          "1/4 cup brandy",
+          "1/4 cup honey or sugar",
+          "2 cinnamon sticks",
+          "2 star anise",
+          "4 cloves"
+        ],
+        "instructions": [
+          "In a large pot, combine all ingredients",
+          "Heat on low until warm (do not boil)",
+          "Simmer for at least 15 minutes",
+          "Strain and serve in mugs",
+          "Garnish with orange slices and cinnamon sticks"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Chamomile Honey Tea",
+        "description": "A calming herbal infusion with sweet honey",
+        "longDescription": "Chamomile Honey Tea is a gentle, soothing drink that helps ease anxiety and bring warmth. Ideal for quiet evenings or when you need emotional comfort.",
+        "image": "https://images.unsplash.com/photo-1618414260786-5ff1f90c8f60?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Celestial Seasonings",
+            "description": "Well-known for their calming chamomile blend"
+          },
+          {
+            "name": "Raw Honey",
+            "description": "Adds smooth, natural sweetness"
+          },
+          {
+            "name": "Lemon Slice",
+            "description": "Optional for a citrus twist"
+          }
+        ],
+        "recipe": [
+          "1 chamomile tea bag",
+          "1 cup hot water",
+          "1 tsp honey",
+          "Lemon slice (optional)"
+        ],
+        "instructions": [
+          "Steep tea bag in hot water for 5 minutes",
+          "Remove bag and stir in honey",
+          "Add lemon slice if desired",
+          "Sip slowly and breathe deeply"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Spiced Apple Cider",
+        "description": "A cozy mug of warm spiced apple cider",
+        "longDescription": "Spiced Apple Cider wraps you in warmth with its sweet apple flavor and subtle spice. Perfect for rainy days and quiet moments by the window.",
+        "image": "https://images.unsplash.com/photo-1604335399108-55631e2ec2c2?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Martinelli's",
+            "description": "Classic non-alcoholic apple cider"
+          },
+          {
+            "name": "Cinnamon Sticks",
+            "description": "Key for warm, spicy aroma"
+          },
+          {
+            "name": "Nutmeg",
+            "description": "Optional but adds depth"
+          }
+        ],
+        "recipe": [
+          "2 cups apple cider",
+          "1 cinnamon stick",
+          "Pinch of nutmeg",
+          "Orange peel (optional)"
+        ],
+        "instructions": [
+          "Heat cider with cinnamon stick and nutmeg in a saucepan",
+          "Simmer gently for 10 minutes",
+          "Strain and serve hot",
+          "Garnish with orange peel if desired"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Amaretto Sour",
+        "description": "A mellow yet tangy almond-flavored cocktail",
+        "longDescription": "The Amaretto Sour is rich, sweet, and sour—a comforting cocktail with notes of almond and citrus, great for introspective evenings.",
+        "image": "https://images.unsplash.com/photo-1612197585185-22a6d2f0c013?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Disaronno",
+            "description": "Classic almond-flavored liqueur"
+          },
+          {
+            "name": "Fresh Lemon Juice",
+            "description": "Brightens the profile"
+          },
+          {
+            "name": "Simple Syrup",
+            "description": "Balances the sourness"
+          }
+        ],
+        "recipe": [
+          "2 oz Amaretto",
+          "1 oz lemon juice",
+          "1/2 oz simple syrup",
+          "Cherry for garnish"
+        ],
+        "instructions": [
+          "Shake all ingredients with ice",
+          "Strain into an old-fashioned glass filled with ice",
+          "Garnish with a cherry"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Warm Milk with Vanilla",
+        "description": "A nostalgic, gentle nighttime drink",
+        "longDescription": "A cup of warm milk with vanilla evokes comfort and quiet. It’s perfect for unwinding, reflecting, or soothing late-night emotions.",
+        "image": "https://images.unsplash.com/photo-1582284545275-4d363f6a791d?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Oatly or Whole Milk",
+            "description": "Creamy base to warm the soul"
+          },
+          {
+            "name": "Pure Vanilla Extract",
+            "description": "Brings subtle sweetness"
+          },
+          {
+            "name": "Honey (optional)",
+            "description": "For an extra soothing touch"
+          }
+        ],
+        "recipe": [
+          "1 cup milk",
+          "1/2 tsp vanilla extract",
+          "1 tsp honey (optional)"
+        ],
+        "instructions": [
+          "Warm the milk gently on the stove (do not boil)",
+          "Stir in vanilla and honey if using",
+          "Pour into a mug and serve warm"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Red Wine Hot Chocolate",
+        "description": "Decadent cocoa with a wine-kissed twist",
+        "longDescription": "Red Wine Hot Chocolate is rich, indulgent, and slightly boozy. A soulful drink that brings together chocolate and fruit tones in a luxurious hug.",
+        "image": "https://images.unsplash.com/photo-1613135882268-802309cdfe8d?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Cabernet Sauvignon",
+            "description": "Robust, fruity red wine"
+          },
+          {
+            "name": "Dark Chocolate",
+            "description": "Use high-quality cocoa or melted chocolate"
+          },
+          {
+            "name": "Milk",
+            "description": "Creamy base to balance the richness"
+          }
+        ],
+        "recipe": [
+          "1/2 cup milk",
+          "1/4 cup red wine",
+          "2 tbsp cocoa powder or chocolate",
+          "1 tsp sugar"
+        ],
+        "instructions": [
+          "Warm milk in a saucepan",
+          "Stir in chocolate and sugar until melted",
+          "Add red wine and heat gently (do not boil)",
+          "Serve warm in a cozy mug"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "London Fog",
+        "description": "An elegant blend of Earl Grey, vanilla, and steamed milk",
+        "longDescription": "London Fog is a tea latte that’s mellow, floral, and slightly sweet. Ideal for slow mornings or quiet moments of thought.",
+        "image": "https://images.unsplash.com/photo-1541542684-4a8f48d5fcaf?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Twinings Earl Grey",
+            "description": "Classic bergamot-flavored black tea"
+          },
+          {
+            "name": "Vanilla Syrup",
+            "description": "Adds soft sweetness"
+          },
+          {
+            "name": "Steamed Milk",
+            "description": "Creates that creamy texture"
+          }
+        ],
+        "recipe": [
+          "1 Earl Grey tea bag",
+          "1/2 cup hot water",
+          "1/2 cup steamed milk",
+          "1 tsp vanilla syrup"
+        ],
+        "instructions": [
+          "Steep the tea bag in hot water for 3-5 minutes",
+          "Add vanilla syrup",
+          "Top with steamed milk",
+          "Optional: froth milk for café-style finish"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Port Wine",
+        "description": "A deep, sweet sipper for slow evenings",
+        "longDescription": "Port Wine is a fortified wine known for its deep, rich sweetness. Sip it slowly in a quiet room and let your thoughts unfold.",
+        "image": "https://images.unsplash.com/photo-1584917353959-1cf14d6bdf70?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Graham's 10 Year Tawny",
+            "description": "Smooth, complex, nutty and sweet"
+          },
+          {
+            "name": "Taylor Fladgate",
+            "description": "Classic rich Port choice"
+          }
+        ],
+        "recipe": [
+          "3 oz Port wine",
+          "Serve in a small glass at room temperature"
+        ],
+        "instructions": [
+          "Pour Port wine into a small glass",
+          "Sip slowly and savor the layers of flavor"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Saffron Milk (Golden Milk)",
+        "description": "A warm Ayurvedic drink to soothe body and soul",
+        "longDescription": "Saffron Milk, also known as golden milk, is anti-inflammatory and comforting, made with warm milk, saffron, and a pinch of turmeric. Ideal for emotional healing.",
+        "image": "https://images.unsplash.com/photo-1597339829958-3dd5fbcdf0b4?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Saffron Threads",
+            "description": "Use a few strands for warmth and color"
+          },
+          {
+            "name": "Whole Milk or Plant Milk",
+            "description": "Base for creaminess"
+          },
+          {
+            "name": "Turmeric",
+            "description": "Adds color and gentle spice"
+          }
+        ],
+        "recipe": [
+          "1 cup milk",
+          "3 strands saffron",
+          "1/4 tsp turmeric",
+          "1 tsp honey"
+        ],
+        "instructions": [
+          "Heat milk gently",
+          "Stir in saffron, turmeric, and honey",
+          "Simmer for 5 minutes, then serve warm"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Baileys Hot Chocolate",
+        "description": "Creamy cocoa with a boozy Irish cream kick",
+        "longDescription": "This hot chocolate is comfort in a cup, with a splash of Baileys Irish Cream. Ideal for chilly evenings or when you need a little sweet escape.",
+        "image": "https://images.unsplash.com/photo-1542990253-0c9f5d2bfa63?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Baileys Irish Cream",
+            "description": "Lush blend of cream, cocoa, and Irish whiskey"
+          },
+          {
+            "name": "Dark Cocoa",
+            "description": "For rich chocolate base"
+          },
+          {
+            "name": "Whole Milk",
+            "description": "Adds smoothness and richness"
+          }
+        ],
+        "recipe": [
+          "1 cup milk",
+          "2 tbsp cocoa",
+          "1 oz Baileys",
+          "Whipped cream (optional)"
+        ],
+        "instructions": [
+          "Heat milk and cocoa until smooth",
+          "Add Baileys and stir",
+          "Top with whipped cream",
+          "Serve hot and cozy"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Rosewater Latte",
+        "description": "A fragrant and delicate floral latte",
+        "longDescription": "A Rosewater Latte is made with espresso or tea, steamed milk, and a touch of rosewater. It’s mellow, aromatic, and perfect for romantic or wistful moods.",
+        "image": "https://images.unsplash.com/photo-1552234994-66ba234fd567?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Espresso or Rooibos Tea",
+            "description": "Base for the latte"
+          },
+          {
+            "name": "Rosewater",
+            "description": "Floral and calming essence"
+          },
+          {
+            "name": "Steamed Milk",
+            "description": "Brings creamy texture"
+          }
+        ],
+        "recipe": [
+          "1 shot espresso or 1 cup strong tea",
+          "3/4 cup steamed milk",
+          "1/4 tsp rosewater",
+          "Sweetener (optional)"
+        ],
+        "instructions": [
+          "Brew espresso or tea",
+          "Mix in rosewater and sweetener",
+          "Top with steamed milk",
+          "Serve in a warm mug"
+        ],
+        "alcoholic": false
+      }
+    ]
+  },
+  "adventurous": {
+    "icon": "compass-outline",
+    "drinks": [
+      {
+        "name": "Mezcal Negroni",
+        "description": "A smoky twist on the classic Negroni",
+        "longDescription": "The Mezcal Negroni is an adventurous take on the classic cocktail, replacing gin with smoky mezcal. It's perfect for those looking to explore new flavor territories.",
+        "image": "https://images.unsplash.com/photo-1542849187-5ec6ea5e6a27?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Del Maguey Vida Mezcal",
+            "description": "A balanced mezcal with the right amount of smokiness"
+          },
+          {
+            "name": "Campari",
+            "description": "The classic bitter component of a Negroni"
+          },
+          {
+            "name": "Carpano Antica Formula",
+            "description": "A rich, complex sweet vermouth"
+          }
+        ],
+        "recipe": [
+          "1 oz mezcal",
+          "1 oz Campari",
+          "1 oz sweet vermouth",
+          "Orange peel for garnish"
+        ],
+        "instructions": [
+          "Fill a mixing glass with ice",
+          "Add mezcal, Campari, and sweet vermouth",
+          "Stir well for about 30 seconds",
+          "Strain into a rocks glass filled with ice",
+          "Garnish with an orange peel"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Pisco Sour",
+        "description": "A South American cocktail with a unique flavor profile",
+        "longDescription": "The Pisco Sour is the national drink of Peru, made with Pisco (a type of brandy), lime juice, syrup, egg white, and bitters. It's known for its frothy texture and balanced sweet-sour taste.",
+        "image": "https://images.unsplash.com/photo-1696594935685-1ad6ba69e83e?q=80&w=2719&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Pisco Portón",
+            "description": "Premium Peruvian pisco"
+          },
+          {
+            "name": "Fresh lime juice",
+            "description": "Essential for the sour component"
+          },
+          {
+            "name": "Egg white",
+            "description": "Creates the signature frothy texture"
+          }
+        ],
+        "recipe": [
+          "2 oz Pisco",
+          "1 oz fresh lime juice",
+          "3/4 oz simple syrup",
+          "1 egg white",
+          "Angostura bitters for garnish"
+        ],
+        "instructions": [
+          "Add all ingredients except bitters to a shaker without ice",
+          "Dry shake vigorously to emulsify the egg white",
+          "Add ice and shake again until well-chilled",
+          "Strain into a chilled coupe glass",
+          "Garnish with a few drops of Angostura bitters"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Absinthe Drip",
+        "description": "The traditional way to enjoy the 'Green Fairy'",
+        "longDescription": "Absinthe is a highly alcoholic spirit derived from wormwood and other herbs. The traditional absinthe drip involves slowly diluting the spirit with ice-cold water over a sugar cube, creating a cloudy, flavorful drink.",
+        "image": "https://images.unsplash.com/photo-1600110078121-d6f5d7797b7b?q=80&w=2894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "brands": [
+          {
+            "name": "Pernod Absinthe",
+            "description": "Classic French absinthe"
+          },
+          {
+            "name": "Sugar cube",
+            "description": "For sweetening and enhancing flavors"
+          },
+          {
+            "name": "Ice water",
+            "description": "For diluting and 'louching' the absinthe"
+          }
+        ],
+        "recipe": [
+          "1 oz absinthe",
+          "1 sugar cube",
+          "3-4 oz ice-cold water"
+        ],
+        "instructions": [
+          "Pour absinthe into a glass",
+          "Place a slotted absinthe spoon on top of the glass",
+          "Put a sugar cube on the spoon",
+          "Slowly drip ice-cold water over the sugar cube",
+          "Watch as the absinthe louches (turns cloudy)",
+          "Stir to dissolve any remaining sugar",
+          "Enjoy responsibly"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Jungle Bird",
+        "description": "A tropical cocktail with unexpected depth",
+        "longDescription": "The Jungle Bird is a rum-based cocktail with bitter Campari and pineapple, originally created in Kuala Lumpur. It’s an exotic mix that challenges your palate in the best way.",
+        "image": "https://images.unsplash.com/photo-1627662055207-cbc723f3f27b?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Dark Jamaican Rum",
+            "description": "Bold and rich base"
+          },
+          {
+            "name": "Campari",
+            "description": "Brings a bitter edge"
+          },
+          {
+            "name": "Pineapple Juice",
+            "description": "Adds sweetness and tropical vibes"
+          }
+        ],
+        "recipe": [
+          "1.5 oz dark rum",
+          "0.75 oz Campari",
+          "1.5 oz pineapple juice",
+          "0.5 oz lime juice",
+          "0.5 oz simple syrup"
+        ],
+        "instructions": [
+          "Shake all ingredients with ice",
+          "Strain into a rocks glass over ice",
+          "Garnish with a pineapple leaf or wedge"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Black Lemonade",
+        "description": "A mysterious twist on lemonade using activated charcoal",
+        "longDescription": "Black Lemonade uses activated charcoal to turn this classic drink jet black. It's detoxifying and eye-catching — a drink that dares to be different.",
+        "image": "https://images.unsplash.com/photo-1612196555261-bc1f32c75c7b?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Activated Charcoal Powder",
+            "description": "Adds dramatic color and is believed to detox"
+          },
+          {
+            "name": "Fresh Lemon Juice",
+            "description": "Provides brightness and tang"
+          },
+          {
+            "name": "Agave Syrup",
+            "description": "Balances the sourness"
+          }
+        ],
+        "recipe": [
+          "2 cups water",
+          "2 tbsp lemon juice",
+          "1 tsp activated charcoal",
+          "1 tbsp agave syrup"
+        ],
+        "instructions": [
+          "Mix all ingredients until the charcoal is fully dissolved",
+          "Serve over ice with a lemon wheel",
+          "Stir before drinking"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Smoked Rosemary Old Fashioned",
+        "description": "A reinvented classic with herbal smoke",
+        "longDescription": "This Old Fashioned is infused with smoked rosemary, adding a dramatic presentation and earthy aroma. Ideal for risk-takers who love bold flavors.",
+        "image": "https://images.unsplash.com/photo-1604937455457-07b76b7d776e?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Bulleit Bourbon",
+            "description": "Spicy and smooth bourbon"
+          },
+          {
+            "name": "Rosemary Sprig",
+            "description": "Smoked for aroma and drama"
+          },
+          {
+            "name": "Angostura Bitters",
+            "description": "Balances the sweetness"
+          }
+        ],
+        "recipe": [
+          "2 oz bourbon",
+          "1 sugar cube",
+          "2 dashes bitters",
+          "1 rosemary sprig"
+        ],
+        "instructions": [
+          "Muddle sugar and bitters in a glass",
+          "Add bourbon and ice, stir gently",
+          "Light rosemary sprig and capture smoke in the glass before serving",
+          "Garnish with the smoked rosemary"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Turmeric Ginger Elixir",
+        "description": "An earthy, spicy health tonic with a kick",
+        "longDescription": "This fiery yellow drink blends turmeric, ginger, and citrus for a punchy, invigorating tonic. Adventurous and energizing — a non-alcoholic powerhouse.",
+        "image": "https://images.unsplash.com/photo-1574920164081-3ce0b6a4700c?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Fresh Ginger Root",
+            "description": "For heat and zing"
+          },
+          {
+            "name": "Ground Turmeric",
+            "description": "Anti-inflammatory and earthy"
+          },
+          {
+            "name": "Cayenne Pepper",
+            "description": "Adds a kick of spice"
+          }
+        ],
+        "recipe": [
+          "1 cup water",
+          "1 tsp grated ginger",
+          "1/2 tsp turmeric",
+          "Juice of 1 lemon",
+          "Pinch of cayenne",
+          "Honey to taste"
+        ],
+        "instructions": [
+          "Combine all ingredients in a saucepan",
+          "Warm over low heat (do not boil)",
+          "Strain and serve hot or chilled"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Wasabi Bloody Mary",
+        "description": "A spicy, adventurous brunch cocktail",
+        "longDescription": "This twist on the Bloody Mary uses wasabi instead of horseradish for a sharper kick. Not for the faint of heart, it's bold, savory, and unforgettable.",
+        "image": "https://images.unsplash.com/photo-1606229394961-8ac61b0d79a7?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Tito's Vodka",
+            "description": "Clean and neutral base spirit"
+          },
+          {
+            "name": "Wasabi Paste",
+            "description": "Brings sharp, nasal-clearing heat"
+          },
+          {
+            "name": "Tomato Juice",
+            "description": "Savory and rich foundation"
+          }
+        ],
+        "recipe": [
+          "2 oz vodka",
+          "4 oz tomato juice",
+          "1/2 tsp wasabi paste",
+          "Dash of soy sauce",
+          "Dash of hot sauce",
+          "Celery and lime for garnish"
+        ],
+        "instructions": [
+          "Shake all ingredients with ice",
+          "Strain into a tall glass with ice",
+          "Garnish with celery stalk and lime wedge"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Coconut Kefir Fizz",
+        "description": "A funky, probiotic mocktail with tropical flair",
+        "longDescription": "Kefir is a fermented drink with natural fizz and tang. This adventurous version uses coconut kefir, lime, and mint for a healthy mocktail with a zing.",
+        "image": "https://images.unsplash.com/photo-1585128792021-b8bfc99482d3?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Coconut Kefir",
+            "description": "Dairy-free, probiotic-rich, and tangy"
+          },
+          {
+            "name": "Fresh Mint",
+            "description": "Adds cooling freshness"
+          },
+          {
+            "name": "Lime Juice",
+            "description": "Provides citrus balance"
+          }
+        ],
+        "recipe": [
+          "1/2 cup coconut kefir",
+          "1 tbsp lime juice",
+          "Fresh mint leaves",
+          "Ice"
+        ],
+        "instructions": [
+          "Muddle mint leaves in a glass",
+          "Add ice and pour over kefir and lime juice",
+          "Stir and garnish with more mint"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Umeshu Highball",
+        "description": "A refreshing Japanese plum wine soda",
+        "longDescription": "Umeshu is a Japanese plum wine with sweet, sour, and fruity notes. This highball serves it over ice with soda water for a uniquely light and adventurous drink.",
+        "image": "https://images.unsplash.com/photo-1641997393563-38f58b68dfc0?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Choya Umeshu",
+            "description": "Sweet and tangy plum wine"
+          },
+          {
+            "name": "Soda Water",
+            "description": "For a fizzy lift"
+          }
+        ],
+        "recipe": [
+          "2 oz Umeshu",
+          "4 oz soda water",
+          "Ice",
+          "Lime wedge (optional)"
+        ],
+        "instructions": [
+          "Fill a glass with ice",
+          "Add Umeshu and top with soda water",
+          "Garnish with a lime wedge"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Oaxacan Hot Chocolate",
+        "description": "Rich and spicy Mexican-style hot chocolate",
+        "longDescription": "This isn't your average cocoa. Made with chili, cinnamon, and dark chocolate, it's a complex drink that warms both body and spirit.",
+        "image": "https://images.unsplash.com/photo-1627308595251-5f1ef0eb5044?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Mexican Chocolate (Abuelita or Ibarra)",
+            "description": "Spiced chocolate tablets"
+          },
+          {
+            "name": "Cinnamon",
+            "description": "Adds warmth and complexity"
+          },
+          {
+            "name": "Chili Powder",
+            "description": "Brings a subtle heat"
+          }
+        ],
+        "recipe": [
+          "2 cups milk",
+          "1 tablet Mexican chocolate",
+          "1/4 tsp chili powder",
+          "1/4 tsp cinnamon"
+        ],
+        "instructions": [
+          "Heat all ingredients over medium heat until chocolate melts",
+          "Whisk until frothy",
+          "Serve warm with a sprinkle of cinnamon"
+        ],
+        "alcoholic": false
+      },
+      {
+        "name": "Saké Basil Smash",
+        "description": "A herbal twist on a clean Japanese spirit",
+        "longDescription": "This unusual combo brings together delicate saké and fresh basil. It’s fresh, grassy, and perfect for adventurous palates.",
+        "image": "https://images.unsplash.com/photo-1612197586460-bd4b1b3d9536?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Junmai Saké",
+            "description": "Clean, dry saké base"
+          },
+          {
+            "name": "Fresh Basil",
+            "description": "Muddled for a green, herbal aroma"
+          },
+          {
+            "name": "Lemon Juice",
+            "description": "Adds a fresh citrus bite"
+          }
+        ],
+        "recipe": [
+          "2 oz saké",
+          "0.75 oz lemon juice",
+          "0.5 oz simple syrup",
+          "5 fresh basil leaves"
+        ],
+        "instructions": [
+          "Muddle basil with syrup and lemon juice",
+          "Add saké and ice, then shake",
+          "Strain into a chilled glass and garnish with basil"
+        ],
+        "alcoholic": true
+      },
+      {
+        "name": "Spiked Thai Iced Tea",
+        "description": "A bold, creamy fusion with a boozy boost",
+        "longDescription": "This version of Thai Iced Tea adds a splash of dark rum to the iconic sweet tea. It’s bold, spicy, creamy, and uniquely satisfying.",
+        "image": "https://images.unsplash.com/photo-1559847844-5315695dada4?q=80&w=2787&auto=format&fit=crop",
+        "brands": [
+          {
+            "name": "Thai Tea Mix",
+            "description": "Spiced tea blend with strong flavor"
+          },
+          {
+            "name": "Evaporated Milk",
+            "description": "Creamy top layer"
+          },
+          {
+            "name": "Dark Rum",
+            "description": "Adds richness and heat"
+          }
+        ],
+        "recipe": [
+          "1 cup brewed Thai tea (cooled)",
+          "1 oz dark rum",
+          "2 tbsp condensed milk",
+          "2 tbsp evaporated milk",
+          "Ice"
+        ],
+        "instructions": [
+          "Fill glass with ice",
+          "Add tea and rum",
+          "Top with condensed and evaporated milk",
+          "Stir gently to swirl"
+        ],
+        "alcoholic": true
+      }
+    ]
   }
-  
-  export interface Drink {
-    name: string
-    description: string
-    longDescription: string
-    image: string
-    brands: Brand[]
-    recipe: string[]
-    instructions: string[]
-    alcoholic: boolean
-  }
-  
-  export interface MoodCategory {
-    icon: string
-    drinks: Drink[]
-  }
-  
-  export const moodDrinks: Record<string, MoodCategory> = {
-    happy: {
-      icon: "emoticon-happy-outline",
-      drinks: [
-        {
-          name: "Mojito",
-          description: "A refreshing mix of rum, mint, and lime",
-          longDescription:
-            "The Mojito is a traditional Cuban highball. The cocktail often consists of five ingredients: white rum, sugar, lime juice, soda water, and mint.",
-          image:
-            "https://images.unsplash.com/photo-1509448613959-44d527dd5d86?q=80&w=2870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Havana Club", description: "Authentic Cuban rum" },
-            { name: "Bacardi", description: "Popular white rum brand" },
-            { name: "Captain Morgan", description: "Well-known rum brand" },
-          ],
-          recipe: [
-            "2 oz white rum",
-            "1 oz fresh lime juice",
-            "1 oz simple syrup",
-            "8-10 fresh mint leaves",
-            "Soda water",
-          ],
-          instructions: [
-            "Muddle mint leaves with simple syrup in a glass",
-            "Add rum, lime juice, and ice",
-            "Stir well",
-            "Top with soda water",
-            "Garnish with mint sprig and lime wheel",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Margarita",
-          description: "A zesty blend of tequila, lime, and salt",
-          longDescription:
-            "The Margarita is a Mexican-inspired cocktail made with tequila, lime, and triple sec. It's often served with salt on the rim of the glass.",
-          image:
-            "https://images.unsplash.com/photo-1678862656501-9bd5d0bf6de1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Patrón", description: "Premium tequila brand" },
-            { name: "Don Julio", description: "High-quality tequila" },
-            { name: "Jose Cuervo", description: "Well-known tequila brand" },
-          ],
-          recipe: ["2 oz tequila", "1 oz lime juice", "1 oz triple sec", "Salt for rimming"],
-          instructions: [
-            "Rim glass with salt",
-            "Combine tequila, lime juice, and triple sec in a shaker with ice",
-            "Shake well",
-            "Strain into the prepared glass",
-            "Garnish with a lime wheel",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Pina Colada",
-          description: "A tropical fusion of rum, coconut, and pineapple",
-          longDescription:
-            "The Piña Colada is a sweet cocktail made with rum, coconut cream, and pineapple juice. It's often served blended or shaken with ice.",
-          image:
-            "https://images.unsplash.com/photo-1490324120634-0fa86c62d6c1?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3",
-          brands: [
-            { name: "Malibu", description: "Coconut flavored rum" },
-            { name: "Bacardi", description: "Popular white rum brand" },
-            { name: "Captain Morgan", description: "Well-known rum brand" },
-          ],
-          recipe: ["2 oz white rum", "2 oz coconut cream", "2 oz pineapple juice", "1 cup crushed ice"],
-          instructions: [
-            "Combine all ingredients in a blender",
-            "Blend until smooth",
-            "Pour into a tall glass",
-            "Garnish with a pineapple wedge and cherry",
-          ],
-          alcoholic: true,
-        },
-      ],
-    },
-    relaxed: {
-      icon: "weather-night",
-      drinks: [
-        {
-          name: "Red Wine",
-          description: "A smooth, full-bodied red to unwind",
-          longDescription:
-            "Red wine is made from dark-colored grape varieties. It's rich in antioxidants and can have complex flavors depending on the grape and aging process.",
-          image:
-            "https://images.unsplash.com/photo-1601924381523-019b78541b95?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Cabernet Sauvignon", description: "Full-bodied red wine" },
-            { name: "Merlot", description: "Smooth, medium-bodied red wine" },
-            { name: "Pinot Noir", description: "Light to medium-bodied red wine" },
-          ],
-          recipe: ["Pour 5 oz of red wine into a wine glass"],
-          instructions: [
-            "Choose your preferred red wine",
-            "Open the bottle and let it breathe for a few minutes",
-            "Pour into a wine glass",
-            "Swirl gently and enjoy",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Whiskey Neat",
-          description: "Pure, unadulterated whiskey for sipping",
-          longDescription:
-            "Whiskey neat refers to a straight pour of whiskey into a glass, served at room temperature without ice, water, or any mixer.",
-          image:
-            "https://images.unsplash.com/photo-1605806629664-1a050df0a913?q=80&w=2918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Johnnie Walker Black Label", description: "Blended Scotch whisky" },
-            { name: "Glenfiddich 12 Year", description: "Single malt Scotch whisky" },
-            { name: "Macallan 12 Year", description: "Highland single malt Scotch whisky" },
-          ],
-          recipe: ["Pour 2 oz of whiskey into a whiskey glass"],
-          instructions: [
-            "Choose your preferred whiskey",
-            "Pour into a whiskey glass",
-            "Let it sit for a moment to open up",
-            "Sip and savor slowly",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Chamomile Tea",
-          description: "A soothing herbal infusion for ultimate relaxation",
-          longDescription:
-            "Chamomile tea is an herbal tea made from dried chamomile flowers. It's known for its calming properties and is often consumed before bedtime.",
-          image:
-            "https://images.unsplash.com/photo-1652620386215-d7aaf6edf856?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Twinings", description: "Well-known tea brand" },
-            { name: "Celestial Seasonings", description: "Popular herbal tea brand" },
-            { name: "Harney & Sons", description: "Premium tea brand" },
-          ],
-          recipe: ["1 chamomile tea bag", "1 cup hot water", "Optional: honey or lemon to taste"],
-          instructions: [
-            "Boil water",
-            "Place tea bag in a mug",
-            "Pour hot water over the tea bag",
-            "Steep for 3-5 minutes",
-            "Remove tea bag and add honey or lemon if desired",
-          ],
-          alcoholic: false,
-        },
-      ],
-    },
-    energetic: {
-      icon: "lightning-bolt",
-      drinks: [
-        {
-          name: "Espresso Martini",
-          description: "A caffeinated cocktail to spark your night",
-          longDescription:
-            "The Espresso Martini is a cold, coffee-flavored cocktail made with vodka, espresso coffee, coffee liqueur, and sugar syrup. It's rich, indulgent, and the perfect pick-me-up for a night out.",
-          image:
-            "https://images.unsplash.com/photo-1607805043580-a37c1540c5dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Kahlúa", description: "A coffee liqueur that adds richness and depth" },
-            { name: "Absolut Vodka", description: "A smooth vodka that blends well with coffee flavors" },
-            { name: "Mr Black Coffee Liqueur", description: "An Australian coffee liqueur with a strong coffee kick" },
-            { name: "Tia Maria", description: "Another popular coffee liqueur option" },
-            { name: "Grey Goose Vodka", description: "A premium vodka for a luxurious Espresso Martini" },
-          ],
-          recipe: [
-            "2 oz vodka",
-            "1 oz fresh espresso",
-            "3/4 oz coffee liqueur",
-            "1/4 oz simple syrup (optional)",
-            "Coffee beans for garnish",
-          ],
-          instructions: [
-            "Fill a shaker with ice",
-            "Add vodka, fresh espresso, coffee liqueur, and simple syrup",
-            "Shake vigorously for about 20 seconds",
-            "Strain into a chilled martini glass",
-            "Garnish with three coffee beans",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Red Bull Vodka",
-          description: "A high-octane mix of energy drink and vodka",
-          longDescription:
-            "Red Bull Vodka is a popular cocktail that combines the stimulating effects of an energy drink with the relaxing properties of vodka. It's known for providing a burst of energy.",
-          image:
-            "https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Red Bull", description: "Popular energy drink" },
-            { name: "Grey Goose", description: "Premium vodka brand" },
-            { name: "Smirnoff", description: "Well-known vodka brand" },
-          ],
-          recipe: ["2 oz vodka", "1 can Red Bull energy drink"],
-          instructions: [
-            "Fill a highball glass with ice",
-            "Pour in vodka",
-            "Top with Red Bull",
-            "Stir gently to combine",
-            "Garnish with a lemon wedge if desired",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Long Island Iced Tea",
-          description: "A potent blend of multiple spirits",
-          longDescription:
-            "The Long Island Iced Tea is a type of alcoholic mixed drink typically made with vodka, tequila, light rum, triple sec, gin, and a splash of cola. Despite its name, the drink contains no tea.",
-          image:
-            "https://images.unsplash.com/photo-1495221521568-8b714b2cb6fd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Absolut Vodka", description: "Swedish vodka brand" },
-            { name: "Bacardi Rum", description: "Popular white rum" },
-            { name: "Jose Cuervo Tequila", description: "Well-known tequila brand" },
-          ],
-          recipe: [
-            "1/2 oz vodka",
-            "1/2 oz white rum",
-            "1/2 oz gin",
-            "1/2 oz tequila",
-            "1/2 oz triple sec",
-            "1 oz fresh lemon juice",
-            "1 oz simple syrup",
-            "Cola to top",
-          ],
-          instructions: [
-            "Fill a cocktail shaker with ice",
-            "Add all ingredients except cola",
-            "Shake well for about 10 seconds",
-            "Strain into a highball glass filled with ice",
-            "Top with a splash of cola",
-            "Garnish with a lemon wedge",
-          ],
-          alcoholic: true,
-        },
-      ],
-    },
-    sad: {
-      icon: "emoticon-sad-outline",
-      drinks: [
-        {
-          name: "Hot Chocolate",
-          description: "A warm, comforting cocoa hug",
-          longDescription:
-            "Hot chocolate is a warm beverage made from shaved chocolate, melted chocolate or cocoa powder, heated milk or water, and sugar. It's often topped with whipped cream or marshmallows.",
-          image:
-            "https://images.unsplash.com/photo-1517578239113-b03992dcdd25?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Ghirardelli", description: "Premium chocolate brand" },
-            { name: "Godiva", description: "Luxury Belgian chocolate" },
-            { name: "Swiss Miss", description: "Popular instant hot chocolate mix" },
-          ],
-          recipe: [
-            "2 tbsp unsweetened cocoa powder",
-            "1-2 tbsp sugar (to taste)",
-            "Pinch of salt",
-            "1 cup milk",
-            "1/4 tsp vanilla extract (optional)",
-            "Whipped cream or marshmallows (optional)",
-          ],
-          instructions: [
-            "In a saucepan, whisk together cocoa powder, sugar, and salt",
-            "Gradually add milk while whisking to combine",
-            "Heat over medium heat, stirring frequently, until hot",
-            "Remove from heat and stir in vanilla extract if using",
-            "Pour into a mug and top with whipped cream or marshmallows if desired",
-          ],
-          alcoholic: false,
-        },
-        {
-          name: "Warm Milk with Honey",
-          description: "A soothing, sweet classic",
-          longDescription:
-            "Warm milk with honey is a simple, comforting drink often used as a natural sleep aid. The combination of warm milk and honey is believed to have calming properties.",
-          image:
-            "https://images.unsplash.com/photo-1601740982032-f7f00107676c?q=80&w=2760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Local organic milk", description: "Fresh, high-quality milk" },
-            { name: "Manuka honey", description: "Premium honey with potential health benefits" },
-            { name: "Wildflower honey", description: "Flavorful honey from various flower sources" },
-          ],
-          recipe: ["1 cup milk", "1-2 tsp honey", "Optional: pinch of cinnamon or nutmeg"],
-          instructions: [
-            "Heat milk in a small saucepan over medium heat until warm",
-            "Remove from heat and stir in honey until dissolved",
-            "Pour into a mug",
-            "Sprinkle with cinnamon or nutmeg if desired",
-            "Enjoy while warm",
-          ],
-          alcoholic: false,
-        },
-        {
-          name: "Herbal Tea",
-          description: "A calming blend of herbs to lift your spirits",
-          longDescription:
-            "Herbal tea is a caffeine-free infusion made from various herbs, flowers, and spices. Different blends can offer various benefits, from relaxation to mood enhancement.",
-          image:
-            "https://images.unsplash.com/photo-1630543378528-10043e324452?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Yogi Tea", description: "Ayurvedic-inspired herbal tea blends" },
-            { name: "Traditional Medicinals", description: "Wellness-focused herbal teas" },
-            { name: "Pukka", description: "Organic herbal teas with unique blends" },
-          ],
-          recipe: ["1 herbal tea bag or 1 tsp loose herbal tea", "1 cup hot water", "Optional: honey or lemon to taste"],
-          instructions: [
-            "Boil water and let it cool for a minute",
-            "Place tea bag or loose tea in a mug",
-            "Pour hot water over the tea",
-            "Steep for 5-7 minutes, or according to package instructions",
-            "Remove tea bag or strain loose tea",
-            "Add honey or lemon if desired",
-          ],
-          alcoholic: false,
-        },
-      ],
-    },
-    stressed: {
-      icon: "water-outline",
-      drinks: [
-        {
-          name: "Green Tea",
-          description: "A zen-inducing cup of antioxidants",
-          longDescription:
-            "Green tea is a type of tea made from Camellia sinensis leaves that have not undergone the same withering and oxidation process used to make oolong and black tea. It's known for its health benefits and calming properties.",
-          image:
-            "https://images.unsplash.com/photo-1711602926021-db8bce24843a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Sencha", description: "Popular Japanese green tea" },
-            { name: "Gyokuro", description: "High-grade, shaded green tea" },
-            { name: "Matcha", description: "Finely ground green tea powder" },
-          ],
-          recipe: [
-            "1 tsp green tea leaves or 1 green tea bag",
-            "1 cup water (175°F/80°C)",
-            "Optional: honey or lemon to taste",
-          ],
-          instructions: [
-            "Heat water to 175°F/80°C (just before boiling)",
-            "Place tea leaves in a teapot or tea bag in a mug",
-            "Pour hot water over the tea",
-            "Steep for 1-3 minutes, depending on desired strength",
-            "Strain leaves or remove tea bag",
-            "Add honey or lemon if desired",
-          ],
-          alcoholic: false,
-        },
-        {
-          name: "Lavender Latte",
-          description: "A calming, floral coffee experience",
-          longDescription:
-            "A Lavender Latte is a soothing coffee drink that combines espresso with steamed milk and lavender syrup. The floral notes of lavender pair well with the rich coffee, creating a unique and relaxing beverage.",
-          image:
-            "https://images.unsplash.com/photo-1594056913352-519eeb0a2f0f?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Homemade", description: "DIY lavender syrup for a personalized touch" },
-            { name: "Local cafe specialty", description: "Unique blends from local coffee shops" },
-            { name: "Lavender syrup brands", description: "Commercial lavender syrups for consistency" },
-          ],
-          recipe: [
-            "1 shot espresso or 1/2 cup strong brewed coffee",
-            "1 cup milk (dairy or plant-based)",
-            "1-2 tbsp lavender syrup",
-            "Dried lavender buds for garnish (optional)",
-          ],
-          instructions: [
-            "Brew espresso or strong coffee",
-            "Steam milk until frothy",
-            "In a mug, combine espresso and lavender syrup",
-            "Pour steamed milk over the coffee, holding back the foam",
-            "Spoon milk foam on top",
-            "Garnish with dried lavender buds if desired",
-          ],
-          alcoholic: false,
-        },
-        {
-          name: "Cucumber Water",
-          description: "A refreshing, hydrating stress-reliever",
-          longDescription:
-            "Cucumber water is a simple, refreshing drink made by infusing water with fresh cucumber slices. It's known for its hydrating properties and subtle, crisp flavor that can help reduce stress and promote relaxation.",
-          image:
-            "https://images.unsplash.com/photo-1527499861446-cc219aea45ae?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Homemade", description: "Freshly made cucumber water" },
-            { name: "Hint", description: "Flavored water brand with cucumber option" },
-            { name: "Spindrift", description: "Sparkling water with real cucumber" },
-          ],
-          recipe: ["1/2 cucumber, thinly sliced", "4 cups cold water", "Optional: fresh mint leaves or lemon slices"],
-          instructions: [
-            "Wash cucumber thoroughly and slice thinly",
-            "Place cucumber slices in a pitcher",
-            "Add mint leaves or lemon slices if using",
-            "Fill the pitcher with cold water",
-            "Refrigerate for at least 1 hour to infuse",
-            "Serve over ice and enjoy",
-          ],
-          alcoholic: false,
-        },
-      ],
-    },
-    romantic: {
-      icon: "heart-outline",
-      drinks: [
-        {
-          name: "Champagne",
-          description: "Bubbly elegance for special moments",
-          longDescription:
-            "Champagne is a sparkling wine produced from grapes grown in the Champagne region of northeastern France. It's associated with luxury and celebration, making it perfect for romantic occasions.",
-          image:
-            "https://images.unsplash.com/photo-1546567075-d7113bee3c4a?q=80&w=2897&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Moët & Chandon", description: "Renowned Champagne house" },
-            { name: "Veuve Clicquot", description: "Prestigious Champagne brand" },
-            { name: "Dom Pérignon", description: "Luxury vintage Champagne" },
-          ],
-          recipe: ["Chill Champagne bottle for at least 3 hours"],
-          instructions: [
-            "Remove Champagne from refrigerator",
-            "Carefully remove the foil and wire cage",
-            "Hold the bottle at a 45-degree angle",
-            "Slowly twist the bottle, not the cork, until it releases with a gentle hiss",
-            "Pour into fluted Champagne glasses",
-            "Serve immediately to enjoy the bubbles",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Rosé Wine",
-          description: "A pink, fruity wine for romantic evenings",
-          longDescription:
-            "Rosé wine is a type of wine that incorporates some of the color from the grape skins, but not enough to qualify it as a red wine. It's known for its pink color and refreshing taste, perfect for romantic settings.",
-          image:
-            "https://images.unsplash.com/photo-1660814807174-85a4ce3af9ea?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Whispering Angel", description: "Popular Provence rosé" },
-            { name: "Miraval", description: "Elegant rosé from Provence" },
-            { name: "La Vieille Ferme", description: "Affordable, quality rosé" },
-          ],
-          recipe: ["Chill rosé wine for 2-3 hours before serving"],
-          instructions: [
-            "Remove rosé from refrigerator",
-            "Open the bottle",
-            "Pour into wine glasses, filling about 1/3 full",
-            "Serve and enjoy at a temperature between 50-60°F (10-15°C)",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Whiskey Cocktail",
-          description: "A sophisticated blend for a romantic night",
-          longDescription:
-            "A whiskey cocktail can be a variety of mixed drinks with whiskey as the primary ingredient. For a romantic setting, consider a classic like an Old Fashioned or a Manhattan, which offer a perfect balance of flavors.",
-          image:
-            "https://images.unsplash.com/photo-1514362453360-8f94243c9996?q=80&w=2726&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Jack Daniel's Honey", description: "Smooth, honey-flavored whiskey" },
-            { name: "Maker's Mark", description: "Premium Kentucky bourbon" },
-            { name: "Woodford Reserve", description: "Craft Kentucky bourbon" },
-          ],
-          recipe: ["2 oz whiskey", "1/4 oz simple syrup", "2-3 dashes Angostura bitters", "Orange peel for garnish"],
-          instructions: [
-            "In a mixing glass, combine whiskey, simple syrup, and bitters",
-            "Add ice and stir until well-chilled",
-            "Strain into a rocks glass over a large ice cube",
-            "Express the oils of an orange peel over the drink",
-            "Garnish with the orange peel and serve",
-          ],
-          alcoholic: true,
-        },
-      ],
-    },
-    excited: {
-      icon: "fire",
-      drinks: [
-        {
-          name: "Cosmopolitan",
-          description: "A vibrant, fruity cocktail perfect for celebrations",
-          longDescription:
-            "The Cosmopolitan is a vodka-based cocktail that combines the kick of citrus with the sweetness of cranberry. It's a perfect drink for those exciting moments when you want to celebrate life.",
-          image:
-            "https://images.unsplash.com/photo-1648231837322-ff07105b26f9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Absolut Citron", description: "A citrus-flavored vodka that forms the base of a great Cosmo" },
-            { name: "Cointreau", description: "An orange-flavored triple sec that adds depth to the cocktail" },
-            { name: "Ocean Spray Cranberry Juice", description: "The classic choice for the fruity component" },
-          ],
-          recipe: [
-            "1.5 oz citrus vodka",
-            "1 oz cranberry juice",
-            "0.5 oz fresh lime juice",
-            "0.5 oz triple sec",
-            "Orange twist for garnish",
-          ],
-          instructions: [
-            "Fill a cocktail shaker with ice",
-            "Add vodka, cranberry juice, lime juice, and triple sec",
-            "Shake well for about 20 seconds",
-            "Strain into a chilled martini glass",
-            "Garnish with an orange twist",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Champagne Cocktail",
-          description: "A bubbly, elegant drink for joyous occasions",
-          longDescription:
-            "A Champagne Cocktail is a classic drink that adds a touch of sweetness and complexity to traditional Champagne. It's perfect for celebrations and adds a festive touch to any exciting event.",
-          image:
-            "https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Moët & Chandon", description: "Renowned Champagne house" },
-            { name: "Veuve Clicquot", description: "Prestigious Champagne brand" },
-            { name: "Dom Pérignon", description: "Luxury vintage Champagne" },
-          ],
-          recipe: ["1 sugar cube", "2-3 dashes Angostura bitters", "Chilled Champagne", "Lemon twist for garnish"],
-          instructions: [
-            "Place a sugar cube in a Champagne flute",
-            "Dash Angostura bitters onto the sugar cube",
-            "Slowly fill the glass with chilled Champagne",
-            "Garnish with a lemon twist",
-            "Serve immediately and enjoy the bubbles",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Sangria",
-          description: "A fruity, wine-based punch perfect for parties",
-          longDescription:
-            "Sangria is a Spanish-origin punch that typically consists of red wine and chopped fruit, often with other ingredients such as orange juice or brandy. It's a refreshing and festive drink ideal for excited gatherings.",
-          image:
-            "https://images.unsplash.com/photo-1617641326660-164119fdbdfd?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Rioja red wine", description: "Traditional Spanish wine for authentic sangria" },
-            { name: "Triple sec", description: "Orange-flavored liqueur to enhance fruitiness" },
-            { name: "Fresh seasonal fruits", description: "For added flavor and visual appeal" },
-          ],
-          recipe: [
-            "1 bottle red wine",
-            "1/4 cup brandy",
-            "1/4 cup orange juice",
-            "2 tbsp sugar",
-            "Assorted chopped fruits (oranges, apples, peaches)",
-            "1 cup sparkling water (optional)",
-          ],
-          instructions: [
-            "In a large pitcher, combine wine, brandy, orange juice, and sugar",
-            "Stir until sugar dissolves",
-            "Add chopped fruits",
-            "Refrigerate for at least 2 hours or overnight",
-            "Before serving, add sparkling water if desired",
-            "Serve over ice and enjoy",
-          ],
-          alcoholic: true,
-        },
-      ],
-    },
-    melancholy: {
-      icon: "weather-pouring",
-      drinks: [
-        {
-          name: "Irish Coffee",
-          description: "A warming blend of coffee and whiskey",
-          longDescription:
-            "Irish Coffee is a cocktail of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream. It's the perfect drink for a rainy day or when you're feeling a bit blue.",
-          image:
-            "https://images.unsplash.com/photo-1549057219-0c0be1287566?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Jameson Irish Whiskey", description: "A smooth whiskey that blends well with coffee" },
-            { name: "Bushmill's Original", description: "Another great Irish whiskey option" },
-            { name: "Lavazza coffee", description: "A rich, full-bodied coffee to form the base" },
-          ],
-          recipe: [
-            "1 cup hot brewed coffee",
-            "1 tablespoon brown sugar",
-            "1.5 oz Irish whiskey",
-            "Lightly whipped cream",
-          ],
-          instructions: [
-            "Fill a mug with hot water to preheat it, then empty",
-            "Pour hot coffee into the warmed mug until it's about 3/4 full",
-            "Add brown sugar and stir until completely dissolved",
-            "Blend in Irish whiskey",
-            "Top with a collar of lightly whipped cream",
-            "Serve hot",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Hot Toddy",
-          description: "A soothing, warm cocktail with whiskey and honey",
-          longDescription:
-            "A Hot Toddy is a mixed drink made of liquor and water with honey, herbs, and spices, served hot. It's often used as a cold remedy and is perfect for comforting on melancholy days.",
-          image:
-            "https://images.unsplash.com/photo-1676037882407-d3ac62533c26?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Glenlivet", description: "Smooth Scotch whisky" },
-            { name: "Honey", description: "Local or organic honey for best flavor" },
-            { name: "Lemon", description: "Fresh lemon for citrus notes" },
-          ],
-          recipe: [
-            "2 oz whiskey",
-            "1 tbsp honey",
-            "1/2 oz lemon juice",
-            "1 cup hot water",
-            "Cinnamon stick and lemon wheel for garnish",
-          ],
-          instructions: [
-            "In a mug, combine whiskey and honey",
-            "Add hot water and stir until honey is dissolved",
-            "Add lemon juice and stir",
-            "Garnish with a cinnamon stick and lemon wheel",
-            "Serve hot and sip slowly",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Mulled Wine",
-          description: "A comforting, spiced wine perfect for cold days",
-          longDescription:
-            "Mulled wine is a warm, spiced wine typically made with red wine along with various mulling spices and sometimes raisins. It's a traditional drink during winter, especially around Christmas.",
-          image:
-            "https://images.unsplash.com/photo-1542143708653-1a0d78f64f21?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Merlot", description: "Full-bodied red wine as a base" },
-            { name: "Cinnamon sticks", description: "For aromatic spice" },
-            { name: "Cloves", description: "Adds warmth and depth to the flavor" },
-          ],
-          recipe: [
-            "1 bottle red wine",
-            "1 orange, sliced",
-            "1/4 cup brandy",
-            "1/4 cup honey or sugar",
-            "2 cinnamon sticks",
-            "2 star anise",
-            "4 cloves",
-          ],
-          instructions: [
-            "In a large pot, combine all ingredients",
-            "Heat on low until warm (do not boil)",
-            "Simmer for at least 15 minutes",
-            "Strain and serve in mugs",
-            "Garnish with orange slices and cinnamon sticks",
-          ],
-          alcoholic: true,
-        },
-      ],
-    },
-    adventurous: {
-      icon: "compass-outline",
-      drinks: [
-        {
-          name: "Mezcal Negroni",
-          description: "A smoky twist on the classic Negroni",
-          longDescription:
-            "The Mezcal Negroni is an adventurous take on the classic cocktail, replacing gin with smoky mezcal. It's perfect for those looking to explore new flavor territories.",
-          image:
-            "https://images.unsplash.com/photo-1542849187-5ec6ea5e6a27?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Del Maguey Vida Mezcal", description: "A balanced mezcal with the right amount of smokiness" },
-            { name: "Campari", description: "The classic bitter component of a Negroni" },
-            { name: "Carpano Antica Formula", description: "A rich, complex sweet vermouth" },
-          ],
-          recipe: ["1 oz mezcal", "1 oz Campari", "1 oz sweet vermouth", "Orange peel for garnish"],
-          instructions: [
-            "Fill a mixing glass with ice",
-            "Add mezcal, Campari, and sweet vermouth",
-            "Stir well for about 30 seconds",
-            "Strain into a rocks glass filled with ice",
-            "Garnish with an orange peel",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Pisco Sour",
-          description: "A South American cocktail with a unique flavor profile",
-          longDescription:
-            "The Pisco Sour is the national drink of Peru, made with Pisco (a type of brandy), lime juice, syrup, egg white, and bitters. It's known for its frothy texture and balanced sweet-sour taste.",
-          image:
-            "https://images.unsplash.com/photo-1696594935685-1ad6ba69e83e?q=80&w=2719&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Pisco Portón", description: "Premium Peruvian pisco" },
-            { name: "Fresh lime juice", description: "Essential for the sour component" },
-            { name: "Egg white", description: "Creates the signature frothy texture" },
-          ],
-          recipe: [
-            "2 oz Pisco",
-            "1 oz fresh lime juice",
-            "3/4 oz simple syrup",
-            "1 egg white",
-            "Angostura bitters for garnish",
-          ],
-          instructions: [
-            "Add all ingredients except bitters to a shaker without ice",
-            "Dry shake vigorously to emulsify the egg white",
-            "Add ice and shake again until well-chilled",
-            "Strain into a chilled coupe glass",
-            "Garnish with a few drops of Angostura bitters",
-          ],
-          alcoholic: true,
-        },
-        {
-          name: "Absinthe Drip",
-          description: "The traditional way to enjoy the 'Green Fairy'",
-          longDescription:
-            "Absinthe is a highly alcoholic spirit derived from wormwood and other herbs. The traditional absinthe drip involves slowly diluting the spirit with ice-cold water over a sugar cube, creating a cloudy, flavorful drink.",
-          image:
-            "https://images.unsplash.com/photo-1600110078121-d6f5d7797b7b?q=80&w=2894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          brands: [
-            { name: "Pernod Absinthe", description: "Classic French absinthe" },
-            { name: "Sugar cube", description: "For sweetening and enhancing flavors" },
-            { name: "Ice water", description: "For diluting and 'louching' the absinthe" },
-          ],
-          recipe: ["1 oz absinthe", "1 sugar cube", "3-4 oz ice-cold water"],
-          instructions: [
-            "Pour absinthe into a glass",
-            "Place a slotted absinthe spoon on top of the glass",
-            "Put a sugar cube on the spoon",
-            "Slowly drip ice-cold water over the sugar cube",
-            "Watch as the absinthe louches (turns cloudy)",
-            "Stir to dissolve any remaining sugar",
-            "Enjoy responsibly",
-          ],
-          alcoholic: true,
-        },
-      ],
-    },
-  }
-  
-  export type Mood = keyof typeof moodDrinks
-  
-  
+}
